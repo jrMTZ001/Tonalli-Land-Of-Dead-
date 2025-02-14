@@ -5,23 +5,17 @@ using UnityEngine;
 public class MyCamera : MonoBehaviour
 {
     public Transform jugador;  // Referencia al jugador
-    public float suavizado = 0.2f;  // Suavizado del movimiento
-    public Vector2 minLimite, maxLimite; // Límites de la cámara
-
-    private Vector3 velocidad = Vector3.zero;
+    public float suavizado = 0.1f;  // Suavidad del movimiento
+    public Vector3 offset = new Vector3(0, 2, -10); // Posición relativa de la cámara
 
     void LateUpdate()
     {
-        if (jugador == null) return;  // Evitar errores si el jugador no está asignado
+        if (jugador == null) return; // Evitar errores si no hay jugador asignado
 
-        // Posición deseada de la cámara
-        Vector3 objetivoPos = new Vector3(jugador.position.x, jugador.position.y, transform.position.z);
+        // Posición deseada de la cámara (jugador + offset)
+        Vector3 objetivoPos = jugador.position + offset;
 
-        // Aplicar límites
-        objetivoPos.x = Mathf.Clamp(objetivoPos.x, minLimite.x, maxLimite.x);
-        objetivoPos.y = Mathf.Clamp(objetivoPos.y, minLimite.y, maxLimite.y);
-
-        // Movimiento suave hacia la posición deseada
-        transform.position = Vector3.SmoothDamp(transform.position, objetivoPos, ref velocidad, suavizado);
+        // Interpolación suave entre la posición actual y la deseada
+        transform.position = Vector3.Lerp(transform.position, objetivoPos, suavizado);
     }
 }

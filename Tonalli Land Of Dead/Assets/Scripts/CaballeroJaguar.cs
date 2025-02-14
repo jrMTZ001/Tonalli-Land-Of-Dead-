@@ -15,14 +15,16 @@ public class CaballeroJaguar : MonoBehaviour
     public Transform chequeoSuelo;
     public LayerMask suelo;
     private bool enSuelo;
+    public Animator anim;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
-    private void Update()
+    public void LateUpdate()
     {
         // Entrada de movimiento
         movimientoHorizontal = Input.GetAxisRaw("Horizontal");
@@ -34,8 +36,12 @@ public class CaballeroJaguar : MonoBehaviour
         if (Input.GetButtonDown("Jump") && enSuelo)
         {
             rb.velocity = new Vector2(rb.velocity.x, fuerzaSalto);
+            anim.SetFloat("ySpeed", fuerzaSalto);
         }
 
+        //Animations.
+        anim.SetFloat("MoveSpeed",Mathf.Abs(rb.velocity.x));
+        anim.SetBool("isGrounded", enSuelo);
         // Cambia la dirección del sprite según el movimiento
         if (movimientoHorizontal > 0)
             spriteRenderer.flipX = false;
