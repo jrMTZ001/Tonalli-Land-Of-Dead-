@@ -4,54 +4,80 @@ using UnityEngine;
 
 public class CaballeroJaguar : MonoBehaviour
 {
-    [Header("Movimiento")]
-    public float velocidad = 5f;
-    private float movimientoHorizontal;
-    private Rigidbody2D rb;
-    private SpriteRenderer spriteRenderer;
+    [Header("Move Info")]
+    public float moveSpeed = 10f;
+    public float jumpForce = 8f;
+    [Header("CollsionInfo")]
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float groundCheckDistance;
+    [SerializeField] private Transform wallCheck;
+    [SerializeField] private float wallCheckDistance;
+    [SerializeField] private LayerMask whatIsGround;
 
-    [Header("Salto")]
-    public float fuerzaSalto = 12f;
-    public Transform chequeoSuelo;
-    public LayerMask suelo;
-    private bool enSuelo;
-    public Animator anim;
+    public int facindDirection { get; private set; } = 1;
+    private bool facingRight = true;
+    #region Componentes
+    public Animator anim { get; private set; }
+    public Rigidbody2D rb { get; private set; }
+    #endregion
+
+    #region states
+    public PlayerStateMachine stateMachine { get; private set; }
+    public PlayerIdleState idleState { get; private set; }
+    public PlayerMoveState moveState { get; private set; }
+
+    public PlayerJumpState jumpState { get; private set; }
+    public PlayerAirState airState { get; private set; } 
+    #endregion
+
+    private void Awake()
+    {
+        stateMachine = new PlayerStateMachine();
+        idleState = new PlayerIdleState(this, stateMachine, "Idle");
+        moveState = new PlayerMoveState(this, stateMachine, "Move");
+        jumpState = new PlayerJumpState(this, stateMachine, "Saltar");
+        airState = new PlayerAirState(this, stateMachine, "Saltar");
+    }
 
     private void Start()
-    {
+    {   
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        
         anim = GetComponent<Animator>();
+        stateMachine.Initialize(idleState);
+    }
+    private void Update()
+    {
+        stateMachine.currentState.Update();
+    }
+    public void SetVelocity(float xVelocity, float yVelocity)
+    {
+        rb.velocity = new Vector2(xVelocity, yVelocity);
+        FlipController(xVelocity);
+    }
+    public bool IsGroundedDetected() => Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
+ 
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance ));
+        Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y));
     }
 
-    public void LateUpdate()
+    public void Flip()
     {
-        // Entrada de movimiento
-        movimientoHorizontal = Input.GetAxisRaw("Horizontal");
-
-        // Verifica si está en el suelo
-        enSuelo = Physics2D.OverlapCircle(chequeoSuelo.position, 0.2f, suelo);
-
-        // Salto
-        if (Input.GetButtonDown("Jump") && enSuelo)
+        facindDirection = facindDirection * -1;
+        facingRight = !facingRight;
+        transform.Rotate(0,180,0);
+    }
+    public void FlipController(float x)
+    {
+        if(x > 0 && !facingRight)
         {
-            rb.velocity = new Vector2(rb.velocity.x, fuerzaSalto);
-            anim.SetFloat("ySpeed", fuerzaSalto);
+            Flip();
         }
-
-        //Animations.
-        anim.SetFloat("MoveSpeed",Mathf.Abs(rb.velocity.x));
-        anim.SetBool("isGrounded", enSuelo);
-        // Cambia la dirección del sprite según el movimiento
-        if (movimientoHorizontal > 0)
-            spriteRenderer.flipX = false;
-        else if (movimientoHorizontal < 0)
-            spriteRenderer.flipX = true;
-    }
-
-    private void FixedUpdate()
-    {
-        // Movimiento en el eje X
-        rb.velocity = new Vector2(movimientoHorizontal * velocidad, rb.velocity.y);
+        else if(x < 0 && facingRight)
+        {
+            Flip();
+        }
     }
 }
