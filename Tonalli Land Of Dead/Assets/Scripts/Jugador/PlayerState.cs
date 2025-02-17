@@ -11,6 +11,8 @@ public class PlayerState
     private string animBoolName;
     protected float xInput;
 
+    protected float stateTimer;
+
     public PlayerState( CaballeroJaguar _player, PlayerStateMachine _stateMachine, string _animBoolName)
     {
         this.player = _player;
@@ -23,7 +25,8 @@ public class PlayerState
         rb = player.rb;
     }
     public virtual void Update()
-    {
+    {   
+        stateTimer -= Time.deltaTime;
         xInput = Input.GetAxisRaw("Horizontal");
         player.anim.SetFloat("yVelocity", rb.velocity.y);
     }

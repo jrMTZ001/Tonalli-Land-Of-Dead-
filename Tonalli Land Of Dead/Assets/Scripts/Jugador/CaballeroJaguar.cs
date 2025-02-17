@@ -7,6 +7,8 @@ public class CaballeroJaguar : MonoBehaviour
     [Header("Move Info")]
     public float moveSpeed = 10f;
     public float jumpForce = 8f;
+    public float dashSpeed;
+    public float dashDuration;
     [Header("CollsionInfo")]
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckDistance;
@@ -28,6 +30,7 @@ public class CaballeroJaguar : MonoBehaviour
 
     public PlayerJumpState jumpState { get; private set; }
     public PlayerAirState airState { get; private set; } 
+    public PlayerDashState dashState { get; private set; }
     #endregion
 
     private void Awake()
@@ -37,6 +40,7 @@ public class CaballeroJaguar : MonoBehaviour
         moveState = new PlayerMoveState(this, stateMachine, "Move");
         jumpState = new PlayerJumpState(this, stateMachine, "Saltar");
         airState = new PlayerAirState(this, stateMachine, "Saltar");
+        dashState = new PlayerDashState(this, stateMachine, "Dash");
     }
 
     private void Start()
@@ -49,6 +53,14 @@ public class CaballeroJaguar : MonoBehaviour
     private void Update()
     {
         stateMachine.currentState.Update();
+        CheckForDashInput();
+    }
+    private void CheckForDashInput()
+    {
+        if(Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            stateMachine.ChangeState(dashState);
+        }
     }
     public void SetVelocity(float xVelocity, float yVelocity)
     {
