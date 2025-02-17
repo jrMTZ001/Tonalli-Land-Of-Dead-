@@ -19,12 +19,16 @@ public class PlayerDashState : PlayerState
     public override void Exit()
     {
         base.Exit();
-        player.SetVelocity(0, rb.velocity.y);
+        player.SetVelocity(0, rb.velocity.y );
     }
     public override void Update()
     {
         base.Update();
-        player.SetVelocity(player.dashSpeed * player.facindDirection, rb.velocity.y);
+        if (!player.IsGroundedDetected() && player.IsWallDetected())
+        {
+            player.stateMachine.ChangeState(player.wallSlide);
+        }
+        player.SetVelocity(player.dashSpeed * player.dashDir, 0);
         if(stateTimer < 0)
         {
             player.stateMachine.ChangeState(player.idleState);

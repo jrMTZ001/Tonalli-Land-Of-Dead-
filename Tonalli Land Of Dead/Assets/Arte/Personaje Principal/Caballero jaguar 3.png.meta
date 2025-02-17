@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f0422861d39e95840aa2dcad323986d5
+guid: 2d4d109a84d95f745b118c4f317148ee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Caballero jaguar 2_0
+      name: Caballero jaguar 3_0
       rect:
         serializedVersion: 2
         x: 18
@@ -118,20 +118,20 @@ TextureImporter:
         width: 18
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad41989c3e46cb54085d40cd8d41a38f
-      internalID: 2034668609
+      spriteID: 877075542ce2e904c8299524d2ad79f3
+      internalID: 2116978219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_1
+      name: Caballero jaguar 3_1
       rect:
         serializedVersion: 2
         x: 87
@@ -139,20 +139,20 @@ TextureImporter:
         width: 18
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea189bce0522e8d43a18ca54e4292819
-      internalID: 1591215431
+      spriteID: d9070ff2b1170464eb1c3c64df092c57
+      internalID: 441153929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_2
+      name: Caballero jaguar 3_2
       rect:
         serializedVersion: 2
         x: 155
@@ -160,20 +160,20 @@ TextureImporter:
         width: 20
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e8c90ed1d5536d41a904a64d900a400
-      internalID: -1307836739
+      spriteID: b3b30f131e7ce5d45a22a5468a160786
+      internalID: -1419691665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_3
+      name: Caballero jaguar 3_3
       rect:
         serializedVersion: 2
         x: 224
@@ -181,20 +181,20 @@ TextureImporter:
         width: 20
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 155fdd5542fd50d45b50eceab871999c
-      internalID: -54028901
+      spriteID: f9e168f3d893645429c9456f21d093d0
+      internalID: -1123894506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_4
+      name: Caballero jaguar 3_4
       rect:
         serializedVersion: 2
         x: 294
@@ -202,20 +202,20 @@ TextureImporter:
         width: 18
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70cec401038ad3b489cf6a3fe8d46d91
-      internalID: -706582395
+      spriteID: 39bf9466df99cb743bedca037e6af6a7
+      internalID: 112229658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_5
+      name: Caballero jaguar 3_5
       rect:
         serializedVersion: 2
         x: 363
@@ -223,20 +223,20 @@ TextureImporter:
         width: 18
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75d1fa88ce64b784cbb4e37dd0b866c8
-      internalID: -1506019146
+      spriteID: a5554ec736c1a4a4688ad23293c117ad
+      internalID: -1232779194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_6
+      name: Caballero jaguar 3_6
       rect:
         serializedVersion: 2
         x: 12
@@ -244,20 +244,20 @@ TextureImporter:
         width: 25
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f818e498007be104d83edc8000405e04
-      internalID: -1879106846
+      spriteID: e959a9b337dc6284eb808860320cd1c0
+      internalID: 1193319712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_7
+      name: Caballero jaguar 3_7
       rect:
         serializedVersion: 2
         x: 82
@@ -265,20 +265,20 @@ TextureImporter:
         width: 23
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c683419bbe6132d4092feb99f827c7c2
-      internalID: 709228656
+      spriteID: 85eb5e614c53f7540aeeba5d0c049410
+      internalID: -1200750340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_8
+      name: Caballero jaguar 3_8
       rect:
         serializedVersion: 2
         x: 150
@@ -286,20 +286,20 @@ TextureImporter:
         width: 29
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60f635742c83e2947bc97ac680da9313
-      internalID: -1401849049
+      spriteID: 1a3b910b60f577640a09d11a716b902d
+      internalID: -2014281772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_9
+      name: Caballero jaguar 3_9
       rect:
         serializedVersion: 2
         x: 219
@@ -307,20 +307,20 @@ TextureImporter:
         width: 25
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c3e7dc397c9465458ff1bd0cdb86161
-      internalID: -426937681
+      spriteID: 65ded05ceaa648043890377c7f9b8b11
+      internalID: -791700640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_10
+      name: Caballero jaguar 3_10
       rect:
         serializedVersion: 2
         x: 288
@@ -328,20 +328,20 @@ TextureImporter:
         width: 30
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2003906da15ad4545b171328565d007b
-      internalID: -1897615660
+      spriteID: 5b053821d92b1c743a6adee3058138ae
+      internalID: -1385562429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_11
+      name: Caballero jaguar 3_11
       rect:
         serializedVersion: 2
         x: 358
@@ -349,20 +349,20 @@ TextureImporter:
         width: 28
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73c27ed50f5692e439ef3314dee4dd88
-      internalID: 1836853393
+      spriteID: b7a28432ea2a16d419625622837937af
+      internalID: 1230827876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_12
+      name: Caballero jaguar 3_12
       rect:
         serializedVersion: 2
         x: 11
@@ -370,20 +370,20 @@ TextureImporter:
         width: 29
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d37de91c4dc50a4a8d8f58977b40234
-      internalID: 245300385
+      spriteID: 59565a2d5e425044380dc04da99e1724
+      internalID: -2123301471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_13
+      name: Caballero jaguar 3_13
       rect:
         serializedVersion: 2
         x: 84
@@ -391,20 +391,20 @@ TextureImporter:
         width: 22
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9365c1166319114f82fef0ca564ee59
-      internalID: -1462334404
+      spriteID: 7a239636f1b6e344b9b6db6fcdb69997
+      internalID: -1683928673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_14
+      name: Caballero jaguar 3_14
       rect:
         serializedVersion: 2
         x: 150
@@ -412,20 +412,20 @@ TextureImporter:
         width: 27
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b66e722c8e58134fa7380ebca0b0ccf
-      internalID: -1004937848
+      spriteID: b481af16693b68243ac8e7ca56f359dd
+      internalID: 486007435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_15
+      name: Caballero jaguar 3_15
       rect:
         serializedVersion: 2
         x: 216
@@ -433,20 +433,20 @@ TextureImporter:
         width: 30
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3740eee4475af3f44ab75122c3698f2f
-      internalID: 2145982523
+      spriteID: 73ea47bd3ad45424fb95065c55731bab
+      internalID: 638460894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_16
+      name: Caballero jaguar 3_16
       rect:
         serializedVersion: 2
         x: 287
@@ -454,20 +454,20 @@ TextureImporter:
         width: 28
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1265c15c4fab4a48af531804ccfe16b
-      internalID: 1694528684
+      spriteID: ef0192889a216e04c99935fa3736198f
+      internalID: 1405035360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_17
+      name: Caballero jaguar 3_17
       rect:
         serializedVersion: 2
         x: 358
@@ -475,20 +475,20 @@ TextureImporter:
         width: 29
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86440911ecc4ef9488db4e58eb6e3af5
-      internalID: 609658672
+      spriteID: 185922419096537498c8c965b68e896a
+      internalID: -104939662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_18
+      name: Caballero jaguar 3_18
       rect:
         serializedVersion: 2
         x: 0
@@ -496,20 +496,20 @@ TextureImporter:
         width: 41
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 093f5a419b8b00c41b43d2a27865008f
-      internalID: 1459111443
+      spriteID: 1d333568567a17149b84c36806e20d39
+      internalID: 2079670733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_19
+      name: Caballero jaguar 3_19
       rect:
         serializedVersion: 2
         x: 15
@@ -517,20 +517,20 @@ TextureImporter:
         width: 27
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54e147f03c6ac2f478b816a261e399e4
-      internalID: -445890001
+      spriteID: 1df0cb55dded1414e9b145db0876c4ca
+      internalID: 967222598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_20
+      name: Caballero jaguar 3_20
       rect:
         serializedVersion: 2
         x: 85
@@ -538,20 +538,20 @@ TextureImporter:
         width: 43
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 010b640d303e9b445bd66249354bb504
-      internalID: 880205001
+      spriteID: 24ff6784e0a409d44afa9328806363cd
+      internalID: 1990922088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_21
+      name: Caballero jaguar 3_21
       rect:
         serializedVersion: 2
         x: 154
@@ -559,20 +559,20 @@ TextureImporter:
         width: 47
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e9669994abe7b841b717d32ff7c69f6
-      internalID: -1540605954
+      spriteID: 9b8b2b962c6e77741937afdf274a060a
+      internalID: 2010413456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_22
+      name: Caballero jaguar 3_22
       rect:
         serializedVersion: 2
         x: 224
@@ -580,20 +580,20 @@ TextureImporter:
         width: 38
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12b3db312bc0c714fa56cbbdb170e90e
-      internalID: -1459124969
+      spriteID: 253aecebed0dfdd45bae02e0e59f124d
+      internalID: -1587054781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_23
+      name: Caballero jaguar 3_23
       rect:
         serializedVersion: 2
         x: 293
@@ -601,20 +601,20 @@ TextureImporter:
         width: 7
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27cdeee2e2434654aad84923018521b5
-      internalID: 1975839798
+      spriteID: 615667689eeb9734794672fde8e63d8f
+      internalID: 339055458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_24
+      name: Caballero jaguar 3_24
       rect:
         serializedVersion: 2
         x: 296
@@ -622,20 +622,20 @@ TextureImporter:
         width: 23
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f67d92ff811e68449ae6fb18ee5cbe08
-      internalID: -2111712464
+      spriteID: f2f8d8f16dfe0054fb8a4c884252fb83
+      internalID: 388953874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_25
+      name: Caballero jaguar 3_25
       rect:
         serializedVersion: 2
         x: 302
@@ -643,20 +643,20 @@ TextureImporter:
         width: 17
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 494253ba310f78a479b414dc99549d2b
-      internalID: 1407263253
+      spriteID: fa48a364c6c4c4249beb1fe7b60e2307
+      internalID: 2091874265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_26
+      name: Caballero jaguar 3_26
       rect:
         serializedVersion: 2
         x: 345
@@ -664,20 +664,20 @@ TextureImporter:
         width: 41
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86d2929ff0914e848be74d2df48b80bf
-      internalID: 345457544
+      spriteID: 5059204ccde4313468e13d43efb0440c
+      internalID: -952745203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_27
+      name: Caballero jaguar 3_27
       rect:
         serializedVersion: 2
         x: 366
@@ -685,20 +685,20 @@ TextureImporter:
         width: 8
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2c9627af9485a544bb268b0d1bbe470
-      internalID: 347680144
+      spriteID: b78298e9edbfb14478c152ccc2516ed6
+      internalID: 1456248014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_28
+      name: Caballero jaguar 3_28
       rect:
         serializedVersion: 2
         x: 72
@@ -706,20 +706,20 @@ TextureImporter:
         width: 38
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d78623dbec1bce243b4133d767fa7c2d
-      internalID: 1023797070
+      spriteID: 58af93fbf47a28846859a745db37a968
+      internalID: 1967093965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_29
+      name: Caballero jaguar 3_29
       rect:
         serializedVersion: 2
         x: 152
@@ -727,20 +727,20 @@ TextureImporter:
         width: 23
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6e166628c6b002499ae433c2e870241
-      internalID: 105341478
+      spriteID: 932aff686a430a84e971fc9cd79d96c6
+      internalID: 1338886232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_30
+      name: Caballero jaguar 3_30
       rect:
         serializedVersion: 2
         x: 214
@@ -748,20 +748,20 @@ TextureImporter:
         width: 33
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f538b42850ec6b84cb4b68c221bf0a6d
-      internalID: -696849304
+      spriteID: 0bc0b1c254f78484992b199e73087fc4
+      internalID: -1480583361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_31
+      name: Caballero jaguar 3_31
       rect:
         serializedVersion: 2
         x: 279
@@ -769,20 +769,20 @@ TextureImporter:
         width: 33
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af3d0dac2aae11748b6e28e8bce63bdf
-      internalID: -10192509
+      spriteID: 7c8cb11d5ef9f7d40a3f1379bea7994a
+      internalID: 958120677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_32
+      name: Caballero jaguar 3_32
       rect:
         serializedVersion: 2
         x: 347
@@ -790,20 +790,20 @@ TextureImporter:
         width: 31
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3215d193c056b64f98e3deb1fc38347
-      internalID: 1717339403
+      spriteID: 7009287e7c557164a9bda1519db28ed4
+      internalID: -1660090969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_33
+      name: Caballero jaguar 3_33
       rect:
         serializedVersion: 2
         x: 379
@@ -811,20 +811,20 @@ TextureImporter:
         width: 7
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a32dc033d2804d04e991f994b6b4ea3b
-      internalID: -191037694
+      spriteID: e95c5cee0b86c9e40ad03e1455a67dd5
+      internalID: 152917075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_34
+      name: Caballero jaguar 3_34
       rect:
         serializedVersion: 2
         x: 2
@@ -832,20 +832,20 @@ TextureImporter:
         width: 29
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9df11202c03c5374da60e384c8cbce16
-      internalID: 705766516
+      spriteID: 953fad065c0c767428255b29960e672f
+      internalID: -624756173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_35
+      name: Caballero jaguar 3_35
       rect:
         serializedVersion: 2
         x: 33
@@ -853,20 +853,20 @@ TextureImporter:
         width: 10
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 389693b0cb6a92c41876ea0a7b29ef6e
-      internalID: 237948913
+      spriteID: 873d09f6700507444a4e183c7d9e6c01
+      internalID: -154375908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_36
+      name: Caballero jaguar 3_36
       rect:
         serializedVersion: 2
         x: 88
@@ -874,20 +874,20 @@ TextureImporter:
         width: 7
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ac4ed96615482745b652a39d5d1eb2e
-      internalID: 914825810
+      spriteID: a26550c5eb4af6247a808276799468fd
+      internalID: -1128675880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_37
+      name: Caballero jaguar 3_37
       rect:
         serializedVersion: 2
         x: 97
@@ -895,20 +895,20 @@ TextureImporter:
         width: 17
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fbe39070bf4c014f96ba029a3ba63af
-      internalID: 551088751
+      spriteID: a0ec8761072e2ac448a951194e9e47c7
+      internalID: 1108618898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_38
+      name: Caballero jaguar 3_38
       rect:
         serializedVersion: 2
         x: 159
@@ -916,20 +916,20 @@ TextureImporter:
         width: 11
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc4ad517130060a46863ce2274d779f8
-      internalID: 655960027
+      spriteID: 21e6774c1a28ab547969fd58e54abe09
+      internalID: 368894886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_39
+      name: Caballero jaguar 3_39
       rect:
         serializedVersion: 2
         x: 206
@@ -937,20 +937,20 @@ TextureImporter:
         width: 42
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0687a5c28e5f58340bd048c1d76c7afe
-      internalID: 780958853
+      spriteID: 5b197b3f5843853418337c82b28a2ca0
+      internalID: 1567926090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_40
+      name: Caballero jaguar 3_40
       rect:
         serializedVersion: 2
         x: 71
@@ -958,20 +958,20 @@ TextureImporter:
         width: 35
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12c69f369d8e55249baede9a3a5e81f3
-      internalID: -1529631718
+      spriteID: c56f9a0a0988865439a9a1cfe9ca4e84
+      internalID: 638724365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_41
+      name: Caballero jaguar 3_41
       rect:
         serializedVersion: 2
         x: 163
@@ -979,20 +979,20 @@ TextureImporter:
         width: 5
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5768804aa47a29d4397b6299f4e90b92
-      internalID: -1341539405
+      spriteID: b0455f719bb8a644abbe84ac8870c584
+      internalID: 1869241404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_42
+      name: Caballero jaguar 3_42
       rect:
         serializedVersion: 2
         x: 176
@@ -1000,20 +1000,20 @@ TextureImporter:
         width: 4
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea7f741218e23c2448a3e8748b3557ea
-      internalID: 1919631771
+      spriteID: 7b2bd93d086bf2c4bac8e06d77a2bd7f
+      internalID: -1994279197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_43
+      name: Caballero jaguar 3_43
       rect:
         serializedVersion: 2
         x: 275
@@ -1021,20 +1021,20 @@ TextureImporter:
         width: 44
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 475117e3bb872de499156c94f508e37a
-      internalID: -1051906275
+      spriteID: a4a7e625588393f4f944eddaf36bedaa
+      internalID: 1123017867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_44
+      name: Caballero jaguar 3_44
       rect:
         serializedVersion: 2
         x: 139
@@ -1042,20 +1042,20 @@ TextureImporter:
         width: 38
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64a4da8798ef79d42a2476a97597f954
-      internalID: -965555470
+      spriteID: 88a9270b6341b3d4e8e4d5c9ef96bfb8
+      internalID: -1942164010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_45
+      name: Caballero jaguar 3_45
       rect:
         serializedVersion: 2
         x: 344
@@ -1063,20 +1063,20 @@ TextureImporter:
         width: 42
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb3537a58ea09bd40a320ae9da5da2ec
-      internalID: -915279198
+      spriteID: c9e41eb6bb9677449b22d4f7ea037987
+      internalID: -129059452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_46
+      name: Caballero jaguar 3_46
       rect:
         serializedVersion: 2
         x: 0
@@ -1084,20 +1084,20 @@ TextureImporter:
         width: 41
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa135d90dbad8e44097aa20f2a41a203
-      internalID: -1033552772
+      spriteID: b62e8e0470416a4419ca8d69d788324f
+      internalID: 617485432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_47
+      name: Caballero jaguar 3_47
       rect:
         serializedVersion: 2
         x: 90
@@ -1105,20 +1105,20 @@ TextureImporter:
         width: 19
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d1693c083580d74aa2f12e758064264
-      internalID: -1538215253
+      spriteID: 35256c2169c8b5640b64635f81b0a06d
+      internalID: -1719032479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_48
+      name: Caballero jaguar 3_48
       rect:
         serializedVersion: 2
         x: 155
@@ -1126,20 +1126,20 @@ TextureImporter:
         width: 21
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6daa07f6034d2ab4cb81f4923e512d88
-      internalID: 285632577
+      spriteID: 619b1b8968a463740adffb26d6eee50e
+      internalID: 1857672277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_49
+      name: Caballero jaguar 3_49
       rect:
         serializedVersion: 2
         x: 225
@@ -1147,20 +1147,20 @@ TextureImporter:
         width: 20
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc6dc08d6dbcbba44bc00ced2c0649d7
-      internalID: 1941708259
+      spriteID: 848eceaf97f7a6949b9839a7d86c3cb3
+      internalID: -695379495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_50
+      name: Caballero jaguar 3_50
       rect:
         serializedVersion: 2
         x: 295
@@ -1168,20 +1168,20 @@ TextureImporter:
         width: 21
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 914f499ba1d331e4ba415f4e39fda20e
-      internalID: -1305938549
+      spriteID: 0aab950f4a430e148be8e95ab5226866
+      internalID: -958964537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_51
+      name: Caballero jaguar 3_51
       rect:
         serializedVersion: 2
         x: 364
@@ -1189,20 +1189,20 @@ TextureImporter:
         width: 20
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 777a679380ad1574ca53eb27df20ce7a
-      internalID: -956503438
+      spriteID: 8bbc4f04c73e15f4f81440e488f0a668
+      internalID: -608500841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_52
+      name: Caballero jaguar 3_52
       rect:
         serializedVersion: 2
         x: 19
@@ -1210,20 +1210,20 @@ TextureImporter:
         width: 20
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ca46f22a13ab704ebeb279856b7eefd
-      internalID: 188908547
+      spriteID: 626bfa5af3fcbd84590430adbf8faba3
+      internalID: 1457106195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_53
+      name: Caballero jaguar 3_53
       rect:
         serializedVersion: 2
         x: 88
@@ -1231,20 +1231,20 @@ TextureImporter:
         width: 20
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e653feb26fb77445a41abbf3180636b
-      internalID: -497903833
+      spriteID: 2f231a4951e971647b426cd57d8324d5
+      internalID: 677790531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_54
+      name: Caballero jaguar 3_54
       rect:
         serializedVersion: 2
         x: 157
@@ -1252,20 +1252,20 @@ TextureImporter:
         width: 20
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5895e56034a874840b3211838d35902c
-      internalID: 2115954042
+      spriteID: 7abd6aa0b6a3bb641b7762098fd32177
+      internalID: 678472725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_55
+      name: Caballero jaguar 3_55
       rect:
         serializedVersion: 2
         x: 225
@@ -1273,20 +1273,20 @@ TextureImporter:
         width: 21
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7285d881a9bab6d45aa593f9bd916c1e
-      internalID: 465746291
+      spriteID: 0c68f0fc7fd127445bdd99aa5009cb72
+      internalID: -2121925661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_56
+      name: Caballero jaguar 3_56
       rect:
         serializedVersion: 2
         x: 294
@@ -1294,20 +1294,20 @@ TextureImporter:
         width: 21
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4dc0c7e8c1a4b8448a0c76ed4805efd6
-      internalID: -1401405292
+      spriteID: ce9b0506df20f4548a9dc2add948d4e7
+      internalID: -1705974276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_57
+      name: Caballero jaguar 3_57
       rect:
         serializedVersion: 2
         x: 363
@@ -1315,20 +1315,20 @@ TextureImporter:
         width: 21
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 715b6f4d21e32fb4a82001c920867187
-      internalID: 1883549217
+      spriteID: b70e99c93df278b409432ad669a5217e
+      internalID: -1165301910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_58
+      name: Caballero jaguar 3_58
       rect:
         serializedVersion: 2
         x: 18
@@ -1336,20 +1336,20 @@ TextureImporter:
         width: 21
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ddb431e089cd4242a0b5c8c9d43a761
-      internalID: -23792469
+      spriteID: ca259cdeb7798204c9ca0b4895ef7714
+      internalID: 1382222722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_59
+      name: Caballero jaguar 3_59
       rect:
         serializedVersion: 2
         x: 83
@@ -1357,20 +1357,20 @@ TextureImporter:
         width: 19
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 234a78bf8c7248b45bd4297ecf1d15cc
-      internalID: 751683167
+      spriteID: 7d1834e1fd2307f47ab0563660acf496
+      internalID: 1175569697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_60
+      name: Caballero jaguar 3_60
       rect:
         serializedVersion: 2
         x: 154
@@ -1378,20 +1378,20 @@ TextureImporter:
         width: 17
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 686cec8a337ac6146a914a572425e135
-      internalID: -935133135
+      spriteID: eb6556e1618806b4baa9f82dfaf0b2e8
+      internalID: -2144713552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_61
+      name: Caballero jaguar 3_61
       rect:
         serializedVersion: 2
         x: 224
@@ -1399,20 +1399,20 @@ TextureImporter:
         width: 16
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 917d5266b3370544099f58b3c39fcaef
-      internalID: 88576450
+      spriteID: e49954e26c7b7b84588c27bc410d3924
+      internalID: 10911717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_62
+      name: Caballero jaguar 3_62
       rect:
         serializedVersion: 2
         x: 292
@@ -1420,20 +1420,20 @@ TextureImporter:
         width: 17
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c4762d6104429f4ca92f42a5a8b0c03
-      internalID: 1188544153
+      spriteID: 9c63874ededcc58449d00e8578e5b05d
+      internalID: 674113659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_63
+      name: Caballero jaguar 3_63
       rect:
         serializedVersion: 2
         x: 363
@@ -1441,20 +1441,20 @@ TextureImporter:
         width: 15
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4232d55312eabf54e843244fb90b4dec
-      internalID: -1565472920
+      spriteID: 85bb6ec0d1bd8de438b072bbd9b5900a
+      internalID: 1190215719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_64
+      name: Caballero jaguar 3_64
       rect:
         serializedVersion: 2
         x: 18
@@ -1462,20 +1462,20 @@ TextureImporter:
         width: 15
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b351fbdf874df743a3b3559ae5fb633
-      internalID: -1185286271
+      spriteID: 4a1fa07861f870c4ea3761b329dbf08e
+      internalID: 929604342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_65
+      name: Caballero jaguar 3_65
       rect:
         serializedVersion: 2
         x: 87
@@ -1483,20 +1483,20 @@ TextureImporter:
         width: 15
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24ea237dfcdfdd6448be70b6539c3998
-      internalID: -269520092
+      spriteID: e39adcaa8f2d894438a246a45d501e26
+      internalID: -355806380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_66
+      name: Caballero jaguar 3_66
       rect:
         serializedVersion: 2
         x: 155
@@ -1504,20 +1504,20 @@ TextureImporter:
         width: 16
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03f9d119b32502a4285758121cd27a20
-      internalID: -1176716760
+      spriteID: 368f308b6f633284ea20593294394484
+      internalID: 852646078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_67
+      name: Caballero jaguar 3_67
       rect:
         serializedVersion: 2
         x: 223
@@ -1525,20 +1525,20 @@ TextureImporter:
         width: 17
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5908806a6718346418662e2e1967e0a2
-      internalID: -505119133
+      spriteID: 6c0962baf3cf6694bace442467f0af83
+      internalID: -37674968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_68
+      name: Caballero jaguar 3_68
       rect:
         serializedVersion: 2
         x: 293
@@ -1546,20 +1546,20 @@ TextureImporter:
         width: 16
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5a518bdc2f146148ba652fdf7fb66ad
-      internalID: 266391324
+      spriteID: ee35c41bda667e5499b49cbef7f1b9c6
+      internalID: 1270240593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_69
+      name: Caballero jaguar 3_69
       rect:
         serializedVersion: 2
         x: 363
@@ -1567,41 +1567,41 @@ TextureImporter:
         width: 15
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6ca051a902223f43b4d1736b6a849cf
-      internalID: 30521287
+      spriteID: 42befcbb44ec67f49b5f8977845161ee
+      internalID: -1062468067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_70
+      name: Caballero jaguar 3_70
       rect:
         serializedVersion: 2
         x: 16
         y: 266
         width: 16
         height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3c52f15210b13343bfd0034b57aa014
-      internalID: 1858656620
+      spriteID: ad612c8e92c2c3d409ff7280a1d0bbc3
+      internalID: -2105931847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_71
+      name: Caballero jaguar 3_71
       rect:
         serializedVersion: 2
         x: 85
@@ -1609,20 +1609,20 @@ TextureImporter:
         width: 16
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abae981d06b253e4e8a7e9276dc95a73
-      internalID: -669564478
+      spriteID: 589518625af392449bb2cbdaa93d7382
+      internalID: -235171757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_72
+      name: Caballero jaguar 3_72
       rect:
         serializedVersion: 2
         x: 154
@@ -1630,20 +1630,20 @@ TextureImporter:
         width: 16
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35dc4cd70eb6a294eaede3b6a2142ec3
-      internalID: -10055637
+      spriteID: 918d4ad6ef2f01f408a7aa0f63005129
+      internalID: 2076136517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_73
+      name: Caballero jaguar 3_73
       rect:
         serializedVersion: 2
         x: 224
@@ -1651,20 +1651,20 @@ TextureImporter:
         width: 20
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a622dd8b3e620b419617b7491731010
-      internalID: 932200578
+      spriteID: a3717814a38e2af4b901bf70eef2f136
+      internalID: 1920196729
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_74
+      name: Caballero jaguar 3_74
       rect:
         serializedVersion: 2
         x: 292
@@ -1672,20 +1672,20 @@ TextureImporter:
         width: 21
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 577e207be05ffe44e801d0897ad58eba
-      internalID: -1455583362
+      spriteID: 760965097260214498ba23f9c001caca
+      internalID: -640731731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_75
+      name: Caballero jaguar 3_75
       rect:
         serializedVersion: 2
         x: 361
@@ -1693,20 +1693,20 @@ TextureImporter:
         width: 21
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 390426e745d3d934194142263f0d5fc9
-      internalID: -385420371
+      spriteID: baa8b68abffaaeb4fb78ad3c51d10b37
+      internalID: -844660566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_76
+      name: Caballero jaguar 3_76
       rect:
         serializedVersion: 2
         x: 16
@@ -1714,20 +1714,20 @@ TextureImporter:
         width: 21
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e9ab9d155c6ee94b87a1a465fbf7e6a
-      internalID: 1428655372
+      spriteID: 42c5c1059923c234ebcf7b49c0b8d5b2
+      internalID: -1880220057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_77
+      name: Caballero jaguar 3_77
       rect:
         serializedVersion: 2
         x: 85
@@ -1735,20 +1735,20 @@ TextureImporter:
         width: 21
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 503dec0c6c5674546a8ea58ab73fc91a
-      internalID: -950927966
+      spriteID: 0a27641a6df3336428d23fc22c01c9c2
+      internalID: 1710806286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_78
+      name: Caballero jaguar 3_78
       rect:
         serializedVersion: 2
         x: 155
@@ -1756,20 +1756,20 @@ TextureImporter:
         width: 20
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8110126eff7d9204689c4b286ba4d6f8
-      internalID: -1578446257
+      spriteID: 4f81cb226287ae949accc0123e722974
+      internalID: 640133940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_79
+      name: Caballero jaguar 3_79
       rect:
         serializedVersion: 2
         x: 220
@@ -1777,20 +1777,20 @@ TextureImporter:
         width: 29
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbea2b2d662c00248b63cadce9b91d43
-      internalID: -605829876
+      spriteID: 9c8d3decc3c2e7b409c531865483547b
+      internalID: -2132285852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_80
+      name: Caballero jaguar 3_80
       rect:
         serializedVersion: 2
         x: 290
@@ -1798,20 +1798,20 @@ TextureImporter:
         width: 28
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9a101fdae62e724e83a0888f06f7f2c
-      internalID: -2056150075
+      spriteID: 987973e4b9b83f24aa3a87092c620e1a
+      internalID: 1771931470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_81
+      name: Caballero jaguar 3_81
       rect:
         serializedVersion: 2
         x: 359
@@ -1819,20 +1819,20 @@ TextureImporter:
         width: 28
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb89f579a56b77b4884ce8a18bb19242
-      internalID: 1266261889
+      spriteID: d68f14a39d0eae242aa78b1d4658ee97
+      internalID: -2020877330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_82
+      name: Caballero jaguar 3_82
       rect:
         serializedVersion: 2
         x: 14
@@ -1840,20 +1840,20 @@ TextureImporter:
         width: 28
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65cc52e7cc26d3041a0fb1492d7f6ea3
-      internalID: -429348835
+      spriteID: 463e5e20375c4ca469ec38ad216d2b93
+      internalID: -1087561765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_83
+      name: Caballero jaguar 3_83
       rect:
         serializedVersion: 2
         x: 77
@@ -1861,20 +1861,20 @@ TextureImporter:
         width: 5
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b4e30ce57409ae41bb6edee5aaa5e18
-      internalID: 2029075562
+      spriteID: f20bcc0b1da53044a8c4abbf197dff29
+      internalID: 912971921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_84
+      name: Caballero jaguar 3_84
       rect:
         serializedVersion: 2
         x: 82
@@ -1882,20 +1882,20 @@ TextureImporter:
         width: 23
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a53a07a1c3eb0404999bdf6cec03890d
-      internalID: -699770291
+      spriteID: 9d04989aaea0a224892851d42aae9eee
+      internalID: -2024339619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_85
+      name: Caballero jaguar 3_85
       rect:
         serializedVersion: 2
         x: 146
@@ -1903,20 +1903,20 @@ TextureImporter:
         width: 28
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1df7cc0d60d8c7d43a6e7d664f59a639
-      internalID: -1546318664
+      spriteID: dc131bad64da1ce439ad9ba5f93e764e
+      internalID: 438581167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_86
+      name: Caballero jaguar 3_86
       rect:
         serializedVersion: 2
         x: 214
@@ -1924,20 +1924,20 @@ TextureImporter:
         width: 30
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 266762216f681f74a878e935b00a5135
-      internalID: 1033730069
+      spriteID: 720b68c58ac93c64cab7178c51d83922
+      internalID: -685096630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_87
+      name: Caballero jaguar 3_87
       rect:
         serializedVersion: 2
         x: 284
@@ -1945,20 +1945,20 @@ TextureImporter:
         width: 5
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5135407371b3fd744971d1df2054a00d
-      internalID: -325062000
+      spriteID: 4d721c864fa5a3047bbaf749d638e639
+      internalID: 337480694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_88
+      name: Caballero jaguar 3_88
       rect:
         serializedVersion: 2
         x: 289
@@ -1966,20 +1966,20 @@ TextureImporter:
         width: 23
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9458edc27de7578479d9cfcb70673d83
-      internalID: -1186423666
+      spriteID: 221c4fe557de62c42bf8df95413d314b
+      internalID: -711110807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_89
+      name: Caballero jaguar 3_89
       rect:
         serializedVersion: 2
         x: 355
@@ -1987,20 +1987,20 @@ TextureImporter:
         width: 27
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6923b5af6ca70ec42b1d6a14f518e33d
-      internalID: 513140509
+      spriteID: 7d66fc812fb1f874f9817f28d56b34b5
+      internalID: 1176704335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_90
+      name: Caballero jaguar 3_90
       rect:
         serializedVersion: 2
         x: 9
@@ -2008,20 +2008,20 @@ TextureImporter:
         width: 29
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95f716f340bed4d4c8659b69678cf245
-      internalID: 52330235
+      spriteID: e3b9f3c8bbe29284e99b6fe57b10c29c
+      internalID: -1441187188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_91
+      name: Caballero jaguar 3_91
       rect:
         serializedVersion: 2
         x: 85
@@ -2029,20 +2029,20 @@ TextureImporter:
         width: 41
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78c5e0069dc91704aac31356414aadc0
-      internalID: 815589476
+      spriteID: 8d7661a409b3b72418a47d7682f944a1
+      internalID: 384580509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_92
+      name: Caballero jaguar 3_92
       rect:
         serializedVersion: 2
         x: 153
@@ -2050,20 +2050,20 @@ TextureImporter:
         width: 45
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 627e2fd893ed0c847bfd265892c2e756
-      internalID: -125292539
+      spriteID: 295c17c8354b347459734a17575eb351
+      internalID: 1031748933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_93
+      name: Caballero jaguar 3_93
       rect:
         serializedVersion: 2
         x: 223
@@ -2071,20 +2071,20 @@ TextureImporter:
         width: 43
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2eaeb20d203fb93418243559aa566d5c
-      internalID: 692650479
+      spriteID: 19b7b0f88f059a04ba90fccd4ffc4151
+      internalID: -226581066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_94
+      name: Caballero jaguar 3_94
       rect:
         serializedVersion: 2
         x: 292
@@ -2092,20 +2092,20 @@ TextureImporter:
         width: 43
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c4f120d488a306428126f7c892f1719
-      internalID: 1677336389
+      spriteID: b8251347cf9aed940b0465a274bd112b
+      internalID: 1702970236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_95
+      name: Caballero jaguar 3_95
       rect:
         serializedVersion: 2
         x: 361
@@ -2113,20 +2113,20 @@ TextureImporter:
         width: 42
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f7f56344bfa12844882f62919846e8b
-      internalID: -468293919
+      spriteID: a68c11f28199c7a4bb1ee5aed11c6383
+      internalID: -1385744792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_96
+      name: Caballero jaguar 3_96
       rect:
         serializedVersion: 2
         x: 20
@@ -2134,20 +2134,20 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28a53050fcd730045b73b1ebe68ac9a0
-      internalID: 1975615866
+      spriteID: 215bb4a2d2e198344b06cd957d46b248
+      internalID: 1854769716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_97
+      name: Caballero jaguar 3_97
       rect:
         serializedVersion: 2
         x: 85
@@ -2155,20 +2155,20 @@ TextureImporter:
         width: 20
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c4e3f017de9c9b4fa53a5159092d153
-      internalID: 1583766471
+      spriteID: 885e231d2d86b214db5c9ae7a28e6a02
+      internalID: 369867689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_98
+      name: Caballero jaguar 3_98
       rect:
         serializedVersion: 2
         x: 151
@@ -2176,20 +2176,20 @@ TextureImporter:
         width: 31
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd8c9a9e7bb6c5e4ea285122d39d3412
-      internalID: 115721299
+      spriteID: 339a96479897d66429b37d45052a3c14
+      internalID: 2048169172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_99
+      name: Caballero jaguar 3_99
       rect:
         serializedVersion: 2
         x: 216
@@ -2197,20 +2197,20 @@ TextureImporter:
         width: 5
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ed2493c66151314faa3bff751eafc5a
-      internalID: -616083148
+      spriteID: 12639b69f09859148b14461efbe8ecf6
+      internalID: 402760357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_100
+      name: Caballero jaguar 3_100
       rect:
         serializedVersion: 2
         x: 221
@@ -2218,20 +2218,20 @@ TextureImporter:
         width: 30
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83e90cb06902a9a419f23f3f6df8fcfe
-      internalID: -609058451
+      spriteID: be29f3c88fc6ea5489f2663005053f33
+      internalID: 2075475143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_101
+      name: Caballero jaguar 3_101
       rect:
         serializedVersion: 2
         x: 285
@@ -2239,20 +2239,20 @@ TextureImporter:
         width: 35
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da73000112785894faa6cd0bc81abbbd
-      internalID: 1095181495
+      spriteID: fbe629586a4288d469066d939da56346
+      internalID: 868289666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_102
+      name: Caballero jaguar 3_102
       rect:
         serializedVersion: 2
         x: 353
@@ -2260,20 +2260,20 @@ TextureImporter:
         width: 32
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf2134377964c24448faca3276625ad3
-      internalID: 440596219
+      spriteID: 658840a762baacf43ae6896ccec6b58a
+      internalID: -1527913709
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_103
+      name: Caballero jaguar 3_103
       rect:
         serializedVersion: 2
         x: 14
@@ -2281,20 +2281,20 @@ TextureImporter:
         width: 24
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d69fbb7fe4d6cf84caa88f91f464e8bb
-      internalID: 653330564
+      spriteID: 51505271113ee7f48a5aff60c7b99440
+      internalID: 1207477364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_104
+      name: Caballero jaguar 3_104
       rect:
         serializedVersion: 2
         x: 92
@@ -2302,20 +2302,20 @@ TextureImporter:
         width: 18
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f118b291c3f45146878e85d14c6513e
-      internalID: 110716656
+      spriteID: 0bb1780aef636864abb2b80b3e7502ea
+      internalID: 259971199
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_105
+      name: Caballero jaguar 3_105
       rect:
         serializedVersion: 2
         x: 161
@@ -2323,20 +2323,20 @@ TextureImporter:
         width: 18
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2eb088809c056943a47979418ad0661
-      internalID: -2018915436
+      spriteID: 3647546e0a714004e88bf06c6b505c4f
+      internalID: 2035772487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_106
+      name: Caballero jaguar 3_106
       rect:
         serializedVersion: 2
         x: 229
@@ -2344,20 +2344,20 @@ TextureImporter:
         width: 18
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 422f5a8f02eb3a94588c161b2fd7e1b5
-      internalID: -657129441
+      spriteID: 74403600cd19ebb4ab87b7ce32ba3066
+      internalID: -625417970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_107
+      name: Caballero jaguar 3_107
       rect:
         serializedVersion: 2
         x: 298
@@ -2365,20 +2365,20 @@ TextureImporter:
         width: 19
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffcf773315c7d024ebaa7ec7a27ec329
-      internalID: -597107682
+      spriteID: ee0952f33d2e8684ca521169c872872d
+      internalID: 1194416453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_108
+      name: Caballero jaguar 3_108
       rect:
         serializedVersion: 2
         x: 366
@@ -2386,20 +2386,20 @@ TextureImporter:
         width: 18
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c4882aa745dff34e8eb45d5342a0beb
-      internalID: -1194095226
+      spriteID: f182fe5207cf2eb41bf4317b768ee703
+      internalID: -2090875431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_109
+      name: Caballero jaguar 3_109
       rect:
         serializedVersion: 2
         x: 21
@@ -2407,20 +2407,20 @@ TextureImporter:
         width: 18
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24a8155fc00d0ac4f970c96ddfd29b47
-      internalID: 1220677808
+      spriteID: 4ddbbbc514cec6f418cd7ce2b81c2daf
+      internalID: -2136499893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_110
+      name: Caballero jaguar 3_110
       rect:
         serializedVersion: 2
         x: 90
@@ -2428,20 +2428,20 @@ TextureImporter:
         width: 18
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77686cbb938f6104f8a5eebe89629fa4
-      internalID: 951404761
+      spriteID: 5a91e7eeebe339b4fae8023859421945
+      internalID: 1406103897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caballero jaguar 2_111
+      name: Caballero jaguar 3_111
       rect:
         serializedVersion: 2
         x: 159
@@ -2449,14 +2449,14 @@ TextureImporter:
         width: 18
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50e6cb6a75ff52b4e9be4d68b90b0f65
-      internalID: -497269349
+      spriteID: 4c834c7f17abf654dbcfd2a26465a55e
+      internalID: -895339638
       vertices: []
       indices: 
       edges: []
@@ -2472,118 +2472,118 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Caballero jaguar 2_0: 2034668609
-      Caballero jaguar 2_1: 1591215431
-      Caballero jaguar 2_10: -1897615660
-      Caballero jaguar 2_100: -609058451
-      Caballero jaguar 2_101: 1095181495
-      Caballero jaguar 2_102: 440596219
-      Caballero jaguar 2_103: 653330564
-      Caballero jaguar 2_104: 110716656
-      Caballero jaguar 2_105: -2018915436
-      Caballero jaguar 2_106: -657129441
-      Caballero jaguar 2_107: -597107682
-      Caballero jaguar 2_108: -1194095226
-      Caballero jaguar 2_109: 1220677808
-      Caballero jaguar 2_11: 1836853393
-      Caballero jaguar 2_110: 951404761
-      Caballero jaguar 2_111: -497269349
-      Caballero jaguar 2_12: 245300385
-      Caballero jaguar 2_13: -1462334404
-      Caballero jaguar 2_14: -1004937848
-      Caballero jaguar 2_15: 2145982523
-      Caballero jaguar 2_16: 1694528684
-      Caballero jaguar 2_17: 609658672
-      Caballero jaguar 2_18: 1459111443
-      Caballero jaguar 2_19: -445890001
-      Caballero jaguar 2_2: -1307836739
-      Caballero jaguar 2_20: 880205001
-      Caballero jaguar 2_21: -1540605954
-      Caballero jaguar 2_22: -1459124969
-      Caballero jaguar 2_23: 1975839798
-      Caballero jaguar 2_24: -2111712464
-      Caballero jaguar 2_25: 1407263253
-      Caballero jaguar 2_26: 345457544
-      Caballero jaguar 2_27: 347680144
-      Caballero jaguar 2_28: 1023797070
-      Caballero jaguar 2_29: 105341478
-      Caballero jaguar 2_3: -54028901
-      Caballero jaguar 2_30: -696849304
-      Caballero jaguar 2_31: -10192509
-      Caballero jaguar 2_32: 1717339403
-      Caballero jaguar 2_33: -191037694
-      Caballero jaguar 2_34: 705766516
-      Caballero jaguar 2_35: 237948913
-      Caballero jaguar 2_36: 914825810
-      Caballero jaguar 2_37: 551088751
-      Caballero jaguar 2_38: 655960027
-      Caballero jaguar 2_39: 780958853
-      Caballero jaguar 2_4: -706582395
-      Caballero jaguar 2_40: -1529631718
-      Caballero jaguar 2_41: -1341539405
-      Caballero jaguar 2_42: 1919631771
-      Caballero jaguar 2_43: -1051906275
-      Caballero jaguar 2_44: -965555470
-      Caballero jaguar 2_45: -915279198
-      Caballero jaguar 2_46: -1033552772
-      Caballero jaguar 2_47: -1538215253
-      Caballero jaguar 2_48: 285632577
-      Caballero jaguar 2_49: 1941708259
-      Caballero jaguar 2_5: -1506019146
-      Caballero jaguar 2_50: -1305938549
-      Caballero jaguar 2_51: -956503438
-      Caballero jaguar 2_52: 188908547
-      Caballero jaguar 2_53: -497903833
-      Caballero jaguar 2_54: 2115954042
-      Caballero jaguar 2_55: 465746291
-      Caballero jaguar 2_56: -1401405292
-      Caballero jaguar 2_57: 1883549217
-      Caballero jaguar 2_58: -23792469
-      Caballero jaguar 2_59: 751683167
-      Caballero jaguar 2_6: -1879106846
-      Caballero jaguar 2_60: -935133135
-      Caballero jaguar 2_61: 88576450
-      Caballero jaguar 2_62: 1188544153
-      Caballero jaguar 2_63: -1565472920
-      Caballero jaguar 2_64: -1185286271
-      Caballero jaguar 2_65: -269520092
-      Caballero jaguar 2_66: -1176716760
-      Caballero jaguar 2_67: -505119133
-      Caballero jaguar 2_68: 266391324
-      Caballero jaguar 2_69: 30521287
-      Caballero jaguar 2_7: 709228656
-      Caballero jaguar 2_70: 1858656620
-      Caballero jaguar 2_71: -669564478
-      Caballero jaguar 2_72: -10055637
-      Caballero jaguar 2_73: 932200578
-      Caballero jaguar 2_74: -1455583362
-      Caballero jaguar 2_75: -385420371
-      Caballero jaguar 2_76: 1428655372
-      Caballero jaguar 2_77: -950927966
-      Caballero jaguar 2_78: -1578446257
-      Caballero jaguar 2_79: -605829876
-      Caballero jaguar 2_8: -1401849049
-      Caballero jaguar 2_80: -2056150075
-      Caballero jaguar 2_81: 1266261889
-      Caballero jaguar 2_82: -429348835
-      Caballero jaguar 2_83: 2029075562
-      Caballero jaguar 2_84: -699770291
-      Caballero jaguar 2_85: -1546318664
-      Caballero jaguar 2_86: 1033730069
-      Caballero jaguar 2_87: -325062000
-      Caballero jaguar 2_88: -1186423666
-      Caballero jaguar 2_89: 513140509
-      Caballero jaguar 2_9: -426937681
-      Caballero jaguar 2_90: 52330235
-      Caballero jaguar 2_91: 815589476
-      Caballero jaguar 2_92: -125292539
-      Caballero jaguar 2_93: 692650479
-      Caballero jaguar 2_94: 1677336389
-      Caballero jaguar 2_95: -468293919
-      Caballero jaguar 2_96: 1975615866
-      Caballero jaguar 2_97: 1583766471
-      Caballero jaguar 2_98: 115721299
-      Caballero jaguar 2_99: -616083148
+      Caballero jaguar 3_0: 2116978219
+      Caballero jaguar 3_1: 441153929
+      Caballero jaguar 3_10: -1385562429
+      Caballero jaguar 3_100: 2075475143
+      Caballero jaguar 3_101: 868289666
+      Caballero jaguar 3_102: -1527913709
+      Caballero jaguar 3_103: 1207477364
+      Caballero jaguar 3_104: 259971199
+      Caballero jaguar 3_105: 2035772487
+      Caballero jaguar 3_106: -625417970
+      Caballero jaguar 3_107: 1194416453
+      Caballero jaguar 3_108: -2090875431
+      Caballero jaguar 3_109: -2136499893
+      Caballero jaguar 3_11: 1230827876
+      Caballero jaguar 3_110: 1406103897
+      Caballero jaguar 3_111: -895339638
+      Caballero jaguar 3_12: -2123301471
+      Caballero jaguar 3_13: -1683928673
+      Caballero jaguar 3_14: 486007435
+      Caballero jaguar 3_15: 638460894
+      Caballero jaguar 3_16: 1405035360
+      Caballero jaguar 3_17: -104939662
+      Caballero jaguar 3_18: 2079670733
+      Caballero jaguar 3_19: 967222598
+      Caballero jaguar 3_2: -1419691665
+      Caballero jaguar 3_20: 1990922088
+      Caballero jaguar 3_21: 2010413456
+      Caballero jaguar 3_22: -1587054781
+      Caballero jaguar 3_23: 339055458
+      Caballero jaguar 3_24: 388953874
+      Caballero jaguar 3_25: 2091874265
+      Caballero jaguar 3_26: -952745203
+      Caballero jaguar 3_27: 1456248014
+      Caballero jaguar 3_28: 1967093965
+      Caballero jaguar 3_29: 1338886232
+      Caballero jaguar 3_3: -1123894506
+      Caballero jaguar 3_30: -1480583361
+      Caballero jaguar 3_31: 958120677
+      Caballero jaguar 3_32: -1660090969
+      Caballero jaguar 3_33: 152917075
+      Caballero jaguar 3_34: -624756173
+      Caballero jaguar 3_35: -154375908
+      Caballero jaguar 3_36: -1128675880
+      Caballero jaguar 3_37: 1108618898
+      Caballero jaguar 3_38: 368894886
+      Caballero jaguar 3_39: 1567926090
+      Caballero jaguar 3_4: 112229658
+      Caballero jaguar 3_40: 638724365
+      Caballero jaguar 3_41: 1869241404
+      Caballero jaguar 3_42: -1994279197
+      Caballero jaguar 3_43: 1123017867
+      Caballero jaguar 3_44: -1942164010
+      Caballero jaguar 3_45: -129059452
+      Caballero jaguar 3_46: 617485432
+      Caballero jaguar 3_47: -1719032479
+      Caballero jaguar 3_48: 1857672277
+      Caballero jaguar 3_49: -695379495
+      Caballero jaguar 3_5: -1232779194
+      Caballero jaguar 3_50: -958964537
+      Caballero jaguar 3_51: -608500841
+      Caballero jaguar 3_52: 1457106195
+      Caballero jaguar 3_53: 677790531
+      Caballero jaguar 3_54: 678472725
+      Caballero jaguar 3_55: -2121925661
+      Caballero jaguar 3_56: -1705974276
+      Caballero jaguar 3_57: -1165301910
+      Caballero jaguar 3_58: 1382222722
+      Caballero jaguar 3_59: 1175569697
+      Caballero jaguar 3_6: 1193319712
+      Caballero jaguar 3_60: -2144713552
+      Caballero jaguar 3_61: 10911717
+      Caballero jaguar 3_62: 674113659
+      Caballero jaguar 3_63: 1190215719
+      Caballero jaguar 3_64: 929604342
+      Caballero jaguar 3_65: -355806380
+      Caballero jaguar 3_66: 852646078
+      Caballero jaguar 3_67: -37674968
+      Caballero jaguar 3_68: 1270240593
+      Caballero jaguar 3_69: -1062468067
+      Caballero jaguar 3_7: -1200750340
+      Caballero jaguar 3_70: -2105931847
+      Caballero jaguar 3_71: -235171757
+      Caballero jaguar 3_72: 2076136517
+      Caballero jaguar 3_73: 1920196729
+      Caballero jaguar 3_74: -640731731
+      Caballero jaguar 3_75: -844660566
+      Caballero jaguar 3_76: -1880220057
+      Caballero jaguar 3_77: 1710806286
+      Caballero jaguar 3_78: 640133940
+      Caballero jaguar 3_79: -2132285852
+      Caballero jaguar 3_8: -2014281772
+      Caballero jaguar 3_80: 1771931470
+      Caballero jaguar 3_81: -2020877330
+      Caballero jaguar 3_82: -1087561765
+      Caballero jaguar 3_83: 912971921
+      Caballero jaguar 3_84: -2024339619
+      Caballero jaguar 3_85: 438581167
+      Caballero jaguar 3_86: -685096630
+      Caballero jaguar 3_87: 337480694
+      Caballero jaguar 3_88: -711110807
+      Caballero jaguar 3_89: 1176704335
+      Caballero jaguar 3_9: -791700640
+      Caballero jaguar 3_90: -1441187188
+      Caballero jaguar 3_91: 384580509
+      Caballero jaguar 3_92: 1031748933
+      Caballero jaguar 3_93: -226581066
+      Caballero jaguar 3_94: 1702970236
+      Caballero jaguar 3_95: -1385744792
+      Caballero jaguar 3_96: 1854769716
+      Caballero jaguar 3_97: 369867689
+      Caballero jaguar 3_98: 2048169172
+      Caballero jaguar 3_99: 402760357
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
