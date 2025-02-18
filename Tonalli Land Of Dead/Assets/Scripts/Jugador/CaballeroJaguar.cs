@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CaballeroJaguar : MonoBehaviour
 {
+    [Header("Attack Details")]
+    public Vector2[] attackMovement;
+    public bool isBusy {  get; private set; }
     [Header("Move Info")]
     public float moveSpeed = 10f;
     public float jumpForce = 8f;
@@ -12,7 +15,7 @@ public class CaballeroJaguar : MonoBehaviour
     private float dashUsageTimer;
     public float dashSpeed;
     public float dashDuration;
-    public float dashDir {  get; private set; }
+    public float dashDir { get; private set; }
     [Header("CollsionInfo")]
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckDistance;
@@ -34,10 +37,10 @@ public class CaballeroJaguar : MonoBehaviour
 
     public PlayerWallSlideState wallSlide { get; private set; }
     public PlayerJumpState jumpState { get; private set; }
-    public PlayerAirState airState { get; private set; } 
+    public PlayerAirState airState { get; private set; }
     public PlayerDashState dashState { get; private set; }
     public PlayerWallJumpState wallJump { get; private set; }
-    public PlayerPrimaryAttack primaryAttack { get; private set; }
+    public PlayerPrimaryAttackState primaryAttack { get; private set; }
     #endregion
 
     private void Awake()
@@ -50,13 +53,13 @@ public class CaballeroJaguar : MonoBehaviour
         dashState = new PlayerDashState(this, stateMachine, "Dash");
         wallSlide = new PlayerWallSlideState(this, stateMachine, "Slide");
         wallJump = new PlayerWallJumpState(this, stateMachine, "Saltar");
-        primaryAttack = new PlayerPrimaryAttack(this, stateMachine, "Attack");
+        primaryAttack = new PlayerPrimaryAttackState(this, stateMachine, "Attack");
     }
 
     private void Start()
-    {   
+    {
         rb = GetComponent<Rigidbody2D>();
-        
+
         anim = GetComponent<Animator>();
         stateMachine.Initialize(idleState);
     }
@@ -65,53 +68,72 @@ public class CaballeroJaguar : MonoBehaviour
         stateMachine.currentState.Update();
         CheckForDashInput();
     }
+
+    public IEnumerator BusyFor(float seconds)
+    {
+        isBusy = true;
+        yield return new WaitForSeconds(seconds);
+        isBusy = false;
+    }
     private void CheckForDashInput()
-    {   
-        if(IsWallDetected())
+    {
+        if (IsWallDetected())
         {
             return;
         }
         dashUsageTimer -= Time.deltaTime;
 
-        if(Input.GetKeyDown(KeyCode.LeftShift) && dashUsageTimer < 0)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && dashUsageTimer < 0)
         {
             dashUsageTimer = dashCooldown;
             dashDir = Input.GetAxisRaw("Horizontal");
-            if(dashDir == 0)
+            if (dashDir == 0)
             {
                 dashDir = facindDirection;
             }
             stateMachine.ChangeState(dashState);
         }
     }
+    #region Velocity
+    public void ZeroVelocity()
+    {
+        rb.velocity = new Vector2(0, 0);
+    }
     public void SetVelocity(float xVelocity, float yVelocity)
     {
         rb.velocity = new Vector2(xVelocity, yVelocity);
         FlipController(xVelocity);
     }
+    #endregion
+    #region collision
     public bool IsGroundedDetected() => Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
     public bool IsWallDetected() => Physics2D.Raycast(wallCheck.position, Vector2.right * facindDirection, wallCheckDistance, whatIsGround);
     private void OnDrawGizmos()
     {
-        Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance ));
+        Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
         Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y));
     }
-
+    #endregion
+    #region  Flip
     public void Flip()
     {
         facindDirection = facindDirection * -1;
         facingRight = !facingRight;
-        transform.Rotate(0,180,0);
+        transform.Rotate(0, 180, 0);
     }
     public void FlipController(float x)
     {
-        if(x > 0 && !facingRight)
+        if (x > 0 && !facingRight)
         {
             Flip();
         }
-        else if(x < 0 && facingRight)
+        else if (x < 0 && facingRight)
         {
             Flip();
         }
     }
+    #endregion
+    public void AnimationTrigger() => stateMachine.currentState.AnimationFinishTrigger();
 }
+
+    
