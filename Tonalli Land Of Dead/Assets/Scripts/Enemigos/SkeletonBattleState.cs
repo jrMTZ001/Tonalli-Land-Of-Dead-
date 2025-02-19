@@ -24,16 +24,28 @@ public class SkeletonBattleState : EnemyState
         base.Exit();
     }
 
+    private bool CanAttack()
+    {
+        if (Time.time >= enemy.lastTimeAttack + enemy.attackCooldown)
+        {
+            enemy.lastTimeAttack = Time.time;
+            return true;
+        }
+        Debug.Log("Attack is cooldown");
+        return false;
+    }
+
     public override void Update()
     {
         base.Update();
         if (enemy.IsPlayerDetected())
-        {
+        {   
             if(enemy.IsPlayerDetected().distance < enemy.attackDistance)
             {
-                Debug.Log("Attack");
-                enemy.ZeroVelocity();
-                return;
+                if(CanAttack())
+                {
+                    stateMachine.ChangeState(enemy.attackState);
+                }
             }
         }
 
