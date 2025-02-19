@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CaballeroJaguar : MonoBehaviour
+public class CaballeroJaguar : Entity
 {
     [Header("Attack Details")]
     public Vector2[] attackMovement;
@@ -16,19 +16,7 @@ public class CaballeroJaguar : MonoBehaviour
     public float dashSpeed;
     public float dashDuration;
     public float dashDir { get; private set; }
-    [Header("CollsionInfo")]
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundCheckDistance;
-    [SerializeField] private Transform wallCheck;
-    [SerializeField] private float wallCheckDistance;
-    [SerializeField] private LayerMask whatIsGround;
-
-    public int facindDirection { get; private set; } = 1;
-    private bool facingRight = true;
-    #region Componentes
-    public Animator anim { get; private set; }
-    public Rigidbody2D rb { get; private set; }
-    #endregion
+   
 
     #region states
     public PlayerStateMachine stateMachine { get; private set; }
@@ -43,8 +31,9 @@ public class CaballeroJaguar : MonoBehaviour
     public PlayerPrimaryAttackState primaryAttack { get; private set; }
     #endregion
 
-    private void Awake()
-    {
+    protected override void Awake()
+    {   
+        base.Awake();
         stateMachine = new PlayerStateMachine();
         idleState = new PlayerIdleState(this, stateMachine, "Idle");
         moveState = new PlayerMoveState(this, stateMachine, "Move");
@@ -56,15 +45,14 @@ public class CaballeroJaguar : MonoBehaviour
         primaryAttack = new PlayerPrimaryAttackState(this, stateMachine, "Attack");
     }
 
-    private void Start()
+    protected override void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-
-        anim = GetComponent<Animator>();
+        base.Start();
         stateMachine.Initialize(idleState);
     }
-    private void Update()
-    {
+    protected override void Update()
+    {  
+        base.Update();
         stateMachine.currentState.Update();
         CheckForDashInput();
     }
@@ -94,45 +82,7 @@ public class CaballeroJaguar : MonoBehaviour
             stateMachine.ChangeState(dashState);
         }
     }
-    #region Velocity
-    public void ZeroVelocity()
-    {
-        rb.velocity = new Vector2(0, 0);
-    }
-    public void SetVelocity(float xVelocity, float yVelocity)
-    {
-        rb.velocity = new Vector2(xVelocity, yVelocity);
-        FlipController(xVelocity);
-    }
-    #endregion
-    #region collision
-    public bool IsGroundedDetected() => Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
-    public bool IsWallDetected() => Physics2D.Raycast(wallCheck.position, Vector2.right * facindDirection, wallCheckDistance, whatIsGround);
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
-        Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y));
-    }
-    #endregion
-    #region  Flip
-    public void Flip()
-    {
-        facindDirection = facindDirection * -1;
-        facingRight = !facingRight;
-        transform.Rotate(0, 180, 0);
-    }
-    public void FlipController(float x)
-    {
-        if (x > 0 && !facingRight)
-        {
-            Flip();
-        }
-        else if (x < 0 && facingRight)
-        {
-            Flip();
-        }
-    }
-    #endregion
+        
     public void AnimationTrigger() => stateMachine.currentState.AnimationFinishTrigger();
 }
 
