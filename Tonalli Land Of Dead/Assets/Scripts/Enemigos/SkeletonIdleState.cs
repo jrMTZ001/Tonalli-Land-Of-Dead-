@@ -26,11 +26,11 @@ public class SkeletonIdleState : SkeletonGroundState
         {
             stateMachine.ChangeState(enemy.moveState);
         }
-        /*
+        
         if(enemy.IsPlayerDetected())
         {
             stateMachine.ChangeState(enemy.battleState);
         }
-        */
+        
     }
 }

@@ -21,7 +21,7 @@ public class SkeletonMoveState : SkeletonGroundState
     public override void Update()
     {
         base.Update();
-        enemy.SetVelocity(enemy.moveSpeed * enemy.facindDirection, enemy.rb.velocity.y);
+        enemy.SetVelocity(enemy.moveSpeed * enemy.facindDirection, ThRB.velocity.y);
         if(enemy.IsWallDetected() || !enemy.IsGroundedDetected())
         {
             enemy.Flip();

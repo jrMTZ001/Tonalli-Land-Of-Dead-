@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class EnemyMove : Entity
 {
-   // [SerializeField]protected LayerMask whatIsPlayer;
+    [SerializeField]protected LayerMask whatIsPlayer;
     [Header("Move info")]
     public float moveSpeed;
     public float idleTime;
+    [Header("Attack Info")]
+    public float attackDistance;
     public EnemyStateMachine stateMachine { get; private set; }
 
     protected override void Awake()
@@ -21,7 +22,15 @@ public class EnemyMove : Entity
     {   
         base.Update();
         stateMachine.currentState.Update();
+        Debug.Log(IsPlayerDetected().collider.gameObject.name + "I SEE");
     }
 
-    //public virtual RaycastHit2D IsPlayerDetected() => Physics2D.Raycast(wallCheck.position, Vector2.right * facindDirection, 50, whatIsPlayer);
+    public virtual RaycastHit2D IsPlayerDetected() => Physics2D.Raycast(wallCheck.position, Vector2.right * facindDirection, 50, whatIsPlayer);
+
+    protected override void OnDrawGizmos()
+    {
+        base.OnDrawGizmos();
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(transform.position, new Vector3(transform.position.x + attackDistance * facindDirection, transform.position.y));
+    }
 }

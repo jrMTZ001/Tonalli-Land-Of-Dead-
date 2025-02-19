@@ -23,11 +23,11 @@ public class SkeletonGroundState : EnemyState
     public override void Update()
     {
         base.Update();
-        /*
+        
         if(enemy.IsPlayerDetected())
         {
             stateMachine.ChangeState(enemy.battleState);
         }
-        */
+        
     }
 }

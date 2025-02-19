@@ -16,7 +16,7 @@ public class SkeletonBattleState : EnemyState
     public override void Enter()
     {
         base.Enter();
-        //player = GameObject.Find("Player").transform;
+        player = GameObject.Find("Player").transform;
     }
 
     public override void Exit()
@@ -27,24 +27,17 @@ public class SkeletonBattleState : EnemyState
     public override void Update()
     {
         base.Update();
-        base.Update();
-
-        if (enemy == null)
+        if (enemy.IsPlayerDetected())
         {
-            Debug.LogError("El enemigo en SkeletonBattleState es null.");
-            return;
+            if(enemy.IsPlayerDetected().distance < enemy.attackDistance)
+            {
+                Debug.Log("Attack");
+                enemy.ZeroVelocity();
+                return;
+            }
         }
 
-        if (player == null)
-        {
-            Debug.LogError("El player no fue encontrado, no se puede calcular la dirección.");
-            return;
-        }
-
-        moveDirection = (player.position.x > enemy.transform.position.x) ? 1 : -1;
-        enemy.SetVelocity(enemy.moveSpeed * moveDirection, enemy.rb.velocity.y);
-        /*
-        if(player.position.x > enemy.transform.position.x)
+        if (player.position.x > enemy.transform.position.x)
         {
             moveDirection = 1;
         }
@@ -52,7 +45,7 @@ public class SkeletonBattleState : EnemyState
         {
             moveDirection = -1;
         }
-        enemy.SetVelocity(enemy.moveSpeed * moveDirection, enemy.rb.velocity.y);
-        */
+        enemy.SetVelocity(enemy.moveSpeed * moveDirection, ThRB.velocity.y);
+        
     }
 }
