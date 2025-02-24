@@ -6,15 +6,27 @@ public class CaballeroJaguar : Entity
 {
     [Header("Attack Details")]
     public Vector2[] attackMovement;
+    public Transform attackPoint;
+    public float attackRange = 1f;
+    public LayerMask enemyLayers;
     public bool isBusy {  get; private set; }
     [Header("Move Info")]
     public float moveSpeed = 10f;
     public float jumpForce = 8f;
+    public Transform player;
     [Header("Dash info")]
     [SerializeField] private float dashCooldown;
     private float dashUsageTimer;
     public float dashSpeed;
     public float dashDuration;
+    [Header("Salud")]
+    public int maxHealth = 100;
+    public int currentHealth;
+    public bool isDead = false;
+    [SerializeField] private float knockbackDuration = 0.2f;
+    [SerializeField] private float knockbackForceX = 5f;
+    [SerializeField] private float knockbackForceY = 3f;
+    private bool isBeingKnockedBack = false;
     public float dashDir { get; private set; }
    
 
@@ -29,6 +41,7 @@ public class CaballeroJaguar : Entity
     public PlayerDashState dashState { get; private set; }
     public PlayerWallJumpState wallJump { get; private set; }
     public PlayerPrimaryAttackState primaryAttack { get; private set; }
+    public PlayerDeathState deathState { get; private set; }
     #endregion
 
     protected override void Awake()
@@ -43,12 +56,67 @@ public class CaballeroJaguar : Entity
         wallSlide = new PlayerWallSlideState(this, stateMachine, "Slide");
         wallJump = new PlayerWallJumpState(this, stateMachine, "Saltar");
         primaryAttack = new PlayerPrimaryAttackState(this, stateMachine, "Attack");
+        deathState = new PlayerDeathState(this, stateMachine, "Death");
+        
     }
 
     protected override void Start()
     {
         base.Start();
         stateMachine.Initialize(idleState);
+        currentHealth = maxHealth;
+    }
+    public void TakeDamage(int damage, Vector3 attackerPosition)
+    {
+        currentHealth -= damage;
+        Debug.Log("Jugador recibió daño: " + damage);
+
+        // **Aplica Knockback con menor fuerza**
+        Vector2 knockbackDir = (transform.position - attackerPosition).normalized;
+        float knockbackForce = -3f; // Ajusta este valor (prueba con 1.5 o 2)
+        rb.velocity = new Vector2(knockbackDir.x * knockbackForce, rb.velocity.y);
+        anim.SetTrigger("Hurt");
+        StartCoroutine(KnockbackRoutine(knockbackDir));
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+    private IEnumerator KnockbackRoutine(Vector2 knockbackDirection)
+    {
+        isBeingKnockedBack = true;
+        rb.velocity = Vector2.zero; // Resetear velocidad antes de aplicar knockback
+
+        rb.AddForce(new Vector2(knockbackDirection.x * knockbackForceX, knockbackForceY), ForceMode2D.Impulse);
+
+        yield return new WaitForSeconds(knockbackDuration); // Esperar un poco para el knockback
+
+        isBeingKnockedBack = false; // Restaurar control del jugador
+    }
+
+
+    private void Die()
+    {
+        /*
+        if (isDead) return;
+
+        isDead = true;
+        anim.SetTrigger("Death");
+        rb.velocity = Vector2.zero;
+
+        rb.gravityScale = 2f; // Asegura que la gravedad sigue funcionando
+        rb.constraints = RigidbodyConstraints2D.FreezePositionX; // Solo permite que caiga, pero no se mueva horizontalmente
+
+        Debug.Log("Jugador ha muerto");
+        */
+        if (isDead) return;
+
+        isDead = true;
+        anim.SetTrigger("Death");
+        rb.velocity = Vector2.zero;
+        rb.simulated = false; // Desactiva la física del jugador si lo deseas
+
+        Debug.Log("Jugador ha muerto");
     }
     protected override void Update()
     {  

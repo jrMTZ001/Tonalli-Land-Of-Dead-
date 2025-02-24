@@ -15,6 +15,7 @@ public class PlayerPrimaryAttackState : PlayerState
 
     public override void Enter()
     {
+        /*
         base.Enter();
         if (comboCounter > 2 || Time.time >= lastTimeAttack + comboWindow)
         {
@@ -30,6 +31,29 @@ public class PlayerPrimaryAttackState : PlayerState
         #endregion
         player.SetVelocity(player.attackMovement[comboCounter].x * attackDir, player.attackMovement[comboCounter].y);
         stateTimer = .1f;
+        */
+        base.Enter();
+
+        if (comboCounter > 2 || Time.time >= lastTimeAttack + comboWindow)
+        {
+            comboCounter = 0;
+        }
+
+        player.anim.SetInteger("ComboCounter", comboCounter);
+
+        #region Escoger dirección para atacar
+        float attackDir = player.facindDirection;
+        if (xInput != 0)
+        {
+            attackDir = xInput;
+        }
+        #endregion
+
+        player.SetVelocity(player.attackMovement[comboCounter].x * attackDir, player.attackMovement[comboCounter].y);
+        stateTimer = .1f;
+
+        // **ATAQUE: Detectar enemigos y hacer daño**
+        Attack();
     }
     public override void Exit()
     {
@@ -49,6 +73,15 @@ public class PlayerPrimaryAttackState : PlayerState
         if(triggerCalled)
         {
             player.stateMachine.ChangeState(player.idleState);
+        }
+    }
+    private void Attack()
+    {
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(player.attackPoint.position, player.attackRange, player.enemyLayers);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            enemy.GetComponent<EnemyCalavera>()?.TakeDamage(20); // Inflige daño
         }
     }
 }
