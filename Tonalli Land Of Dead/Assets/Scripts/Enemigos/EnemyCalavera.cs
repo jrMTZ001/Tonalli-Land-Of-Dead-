@@ -13,7 +13,9 @@ public class EnemyCalavera : MonoBehaviour
     public LayerMask groundLayer;
     public LayerMask playerLayer; // Nuevo: Capa del jugador
     public Transform player;
-    public int health =  50;
+    public int maxHealth = 100;
+    public int currentHealth;
+    private bool isDead = false;
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -24,6 +26,7 @@ public class EnemyCalavera : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        currentHealth = maxHealth;
     }
 
     void Update()
@@ -71,12 +74,26 @@ public class EnemyCalavera : MonoBehaviour
 
     void Move()
     {
+        /*
         if (isAttacking) return;  // No moverse si está atacando
 
         animator.SetBool("isMoving", true);
         rb.velocity = new Vector2(movingRight ? speed : -speed, rb.velocity.y);
 
         // Verifica si hay pared o borde
+        bool isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundLayer);
+        bool isTouchingWall = Physics2D.OverlapCircle(wallCheck.position, checkRadius, groundLayer);
+
+        if (!isGrounded || isTouchingWall)
+        {
+            Flip();
+        }
+        */
+        if (isAttacking || animator.GetCurrentAnimatorStateInfo(0).IsName("Hurt")) return; // No moverse en Hurt
+
+        animator.SetBool("isMoving", true);
+        rb.velocity = new Vector2(movingRight ? speed : -speed, rb.velocity.y);
+
         bool isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundLayer);
         bool isTouchingWall = Physics2D.OverlapCircle(wallCheck.position, checkRadius, groundLayer);
 
@@ -115,7 +132,7 @@ public class EnemyCalavera : MonoBehaviour
 
     // **Nuevo: Aplicar daño al jugador**
     public void ApplyDamage(int damage)
-    {
+    {   
         Collider2D playerCollider = Physics2D.OverlapCircle(attackPoint.position, attackRange, playerLayer);
         if (playerCollider != null)
         {
@@ -124,22 +141,93 @@ public class EnemyCalavera : MonoBehaviour
     }
     void Die()
     {
+        /*
         animator.SetTrigger("Death");
         rb.velocity = Vector2.zero; // Detener movimiento
         GetComponent<Collider2D>().enabled = false; // Desactivar colisiones
         this.enabled = false; // Desactivar script
 
         Destroy(gameObject, 2f); // Eliminar el enemigo después de la animación
+        */
+        isDead = true;
+        animator.SetBool("isDead", true);
+        rb.velocity = Vector2.zero; // Detener el movimiento
+        rb.bodyType = RigidbodyType2D.Static; // Congelar al enemigo
+        GetComponent<Collider2D>().enabled = false; // Desactivar colisión para evitar interferencias
+        this.enabled = false; // Desactivar el script del enemigo
     }
 
     public void TakeDamage(int damage)
     {
-        health -= damage;
+        /*
+        maxHealth -= damage;
         animator.SetTrigger("Hurt"); // Si tienes animación de daño
 
-        if (health <= 0)
+        if (maxHealth <= 0)
         {
             Die();
         }
+        */
+        /*
+        if (isDead) return; // Si ya está muerto, no recibir más daño.
+
+        currentHealth -= damage;
+        animator.SetTrigger("Hurt"); // Activar animación de daño
+
+        // Aplicar un pequeño retroceso al enemigo cuando recibe daño
+        rb.velocity = new Vector2(-transform.localScale.x * 2, rb.velocity.y);
+
+        // Si la vida llega a 0, morir
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+        else
+        {
+            StartCoroutine(RecoverFromHurt()); // Permitir que vuelva a moverse después de un tiempo
+        }
+        */
+        /*
+        if (isDead) return; // Evita recibir daño si ya está muerto
+
+        currentHealth -= damage;
+        animator.SetTrigger("Hurt"); // Activa la animación de daño
+
+        // Detener el movimiento mientras está en Hurt
+        rb.velocity = Vector2.zero;
+        isAttacking = true; // Evita moverse o atacar mientras está en Hurt
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+        else
+        {
+            StartCoroutine(RecoverFromHurt()); // Volver a moverse después de Hurt
+        }
+        */
+        if (isDead) return; // Evita recibir daño si ya está muerto
+
+        currentHealth -= damage;
+        animator.SetTrigger("Hurt"); // Activa animación de daño
+
+        rb.velocity = Vector2.zero; // Detener movimiento en Hurt
+        isAttacking = true; // Evita moverse o atacar mientras está en Hurt
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+        else
+        {
+            StartCoroutine(RecoverFromHurt()); // Reanudar patrulla después de Hurt
+        }
+    }
+    private IEnumerator RecoverFromHurt()
+    {
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length); // Esperar hasta que termine Hurt
+
+        isAttacking = false; // Habilitar movimiento otra vez
+        animator.SetBool("isMoving", true); // Reanudar animación de caminar
     }
 }

@@ -54,3 +54,9 @@ TagManager:
   - name: Player
     uniqueID: 2128030721
     locked: 0
+  - name: Alma
+    uniqueID: 936338101
+    locked: 0
+  - name: Salud
+    uniqueID: 636664359
+    locked: 0

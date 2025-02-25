@@ -23,6 +23,9 @@ public class CaballeroJaguar : Entity
     public int maxHealth = 100;
     public int currentHealth;
     public bool isDead = false;
+    public int puntos = 0;
+    public int vidaMaxima = 100;
+    public int vidaActual;
     [SerializeField] private float knockbackDuration = 0.2f;
     [SerializeField] private float knockbackForceX = 5f;
     [SerializeField] private float knockbackForceY = 3f;
@@ -81,6 +84,17 @@ public class CaballeroJaguar : Entity
         {
             Die();
         }
+    }
+    public void AgregarPuntos(int cantidad)
+    {
+        puntos += cantidad;
+        Debug.Log("Puntos: " + puntos);
+    }
+
+    public void RecuperarSalud(int cantidad)
+    {
+        vidaActual = Mathf.Min(vidaActual + cantidad, vidaMaxima);
+        Debug.Log("Vida: " + vidaActual);
     }
     private IEnumerator KnockbackRoutine(Vector2 knockbackDirection)
     {
