@@ -8,7 +8,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 6080
+  controlID: 155
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 1
-  controlID: 98
+  controlID: 215
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 99
+  controlID: 216
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 6078
+  controlID: 153
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 6079
+  controlID: 154
   draggingID: 0
 --- !u!114 &11
 MonoBehaviour:
@@ -269,8 +269,8 @@ MonoBehaviour:
     y: 0
     width: 224
     height: 453.6
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -351,8 +351,8 @@ MonoBehaviour:
     y: 0
     width: 362.40002
     height: 722.8
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -597,10 +597,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2a790000
-      m_LastClickedID: 31018
-      m_ExpandedIDs: 62a9ffffeaf6fffffcfaffff
+      scrollPos: {x: 0, y: 148.4}
+      m_SelectedIDs: d4060000
+      m_LastClickedID: 0
+      m_ExpandedIDs: ae04ffffe8a2000002a3000024a300003ea3000088a30000e0a3000006a400001ea4000032a40000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1130,7 +1130,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Enemigos
+    - Assets/Scripts/Jugador
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1138,7 +1138,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Enemigos
+  - Assets/Scripts/Jugador
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\ppmar\OneDrive\Documentos\Tonalli-Land-Of-Dead-\Tonalli
     Land Of Dead
@@ -1146,9 +1146,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 123.80002}
-    m_SelectedIDs: 868c0000
-    m_LastClickedID: 35974
-    m_ExpandedIDs: 000000006a7c0000768c0000808c000000ca9a3b
+    m_SelectedIDs: 12b50000
+    m_LastClickedID: 46354
+    m_ExpandedIDs: 00000000f8a100000ea2000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1176,7 +1176,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006a7c0000
+    m_ExpandedIDs: 00000000f8a1000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1201,8 +1201,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: c47a0000
-    m_LastClickedInstanceID: 31428
+    m_SelectedInstanceIDs: d4060000
+    m_LastClickedInstanceID: 1748
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000ca7e000056830000b0820000d883000072820000628200005c82000008830000bc710000b4710000b8710000b2710000aa710000f6770000de770000e2770000ba770000ca770000c67700006c830000607300002a7300001c740000207400000c780000de730000727a0000887800000e760000fc7500008e760000e2790000d47d00007878000074780000f47d0000f87d0000907c0000947c00005c7c0000e07d0000cc810000408300009682000080760000427d0000da750000de75000088740000187100007e7400006479000018750000e6750000ee75000088720000f2750000c48700008a860000c2970000987100008c7200001e790000dc7f0000147900000c790000107900000a7d0000c6710000368700008c8900007a8a00007e8a0000127a0000f28d0000467a0000b49e0000149f0000dc87000094880000b47b0000b8880000bc880000c47b0000c67b000060b4000062b4000064b4000066b400004eb40000d07b00006a8e00008cbe0000a0be00003a7c0000387c0000649c0000709c00001e9c00007e8900007c890000129c0000667c0000608b00009c7c0000dc780000ce780000ea78000030820000b48f0000428c0000be820000ce8c0000ac8d00002c7a0000047c000004790000aea90000b6a90000b28d0000548b000086790000068b0000c88c00004a8b00005e8b0000b6ae0000aaae0000aa940000b0940000be790000a4a30000de8b0000648c0000708c0000baa50000b87a00000a8e0000
     m_RenameOverlay:
