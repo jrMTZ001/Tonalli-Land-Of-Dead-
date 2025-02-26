@@ -20,18 +20,17 @@ public class CaballeroJaguar : Entity
     public float dashSpeed;
     public float dashDuration;
     [Header("Salud")]
-    public int maxHealth = 100;
-    public int currentHealth;
-    public bool isDead = false;
+    //public int maxHealth = 100;
+    //public int currentHealth;
+    //public bool isDead = false;
     public int puntos = 0;
-    public int vidaMaxima = 100;
-    public int vidaActual;
-    public HealthBar healthBar;
+    //public int vidaMaxima = 100;
+    //public int vidaActual;
+    //public HealthBar healthBar;
     [SerializeField] private float knockbackDuration = 0.2f;
     [SerializeField] private float knockbackForceX = 5f;
     [SerializeField] private float knockbackForceY = 3f;
     private bool isBeingKnockedBack = false;
-    private Vector3 respawnPoint;
     public float dashDir { get; private set; }
    
 
@@ -64,24 +63,18 @@ public class CaballeroJaguar : Entity
         deathState = new PlayerDeathState(this, stateMachine, "Death");
         
     }
-    public void SetCheckpoint(Vector3 newCheckpoint)
-    {
-        respawnPoint = newCheckpoint;
-        Debug.Log("Checkpoint actualizado a: " + respawnPoint);
-    }
-
     protected override void Start()
     {
         base.Start();
         stateMachine.Initialize(idleState);
-        currentHealth = maxHealth;
-        healthBar.UpdateHealthBar(currentHealth, maxHealth);
-        //respawnPoint = transform.position;
+        //currentHealth = maxHealth;
+        //healthBar.UpdateHealthBar(currentHealth, maxHealth);
     }
     public void TakeDamage(int damage, Vector3 attackerPosition)
     {
-        currentHealth -= damage;
-        healthBar.UpdateHealthBar(currentHealth, maxHealth);
+        
+        //currentHealth -= damage;
+       // healthBar.UpdateHealthBar(currentHealth, maxHealth);
         Debug.Log("Jugador recibió daño: " + damage);
 
         // **Aplica Knockback con menor fuerza**
@@ -90,10 +83,12 @@ public class CaballeroJaguar : Entity
         rb.velocity = new Vector2(knockbackDir.x * knockbackForce, rb.velocity.y);
         anim.SetTrigger("Hurt");
         StartCoroutine(KnockbackRoutine(knockbackDir));
+        /*
         if (currentHealth <= 0)
         {
             Die();
         }
+        */
     }
     public void AgregarPuntos(int cantidad)
     {
@@ -103,7 +98,7 @@ public class CaballeroJaguar : Entity
 
     public void RecuperarSalud(int cantidad)
     {
-        currentHealth += cantidad;
+        //currentHealth += cantidad;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         healthBar.UpdateHealthBar(currentHealth, maxHealth);
         Debug.Log("Vida: " + vidaActual);
@@ -135,21 +130,27 @@ public class CaballeroJaguar : Entity
 
         Debug.Log("Jugador ha muerto");
         */
+        
         if (isDead) return;
-
         isDead = true;
         anim.SetTrigger("Death");
         rb.velocity = Vector2.zero;
         rb.simulated = false; // Desactiva la física del jugador si lo deseas
+        
 
-        Debug.Log("Jugador ha muerto");
+        StartCoroutine(RespawnRoutine()); // Inicia la reaparición después de la muerte
+    
+    }
+    private IEnumerator RespawnRoutine()
+    {
+        yield return new WaitForSeconds(1.5f); // Espera 1.5 segundos antes de revivir
+        LifeController.instance.Respawn();
     }
     protected override void Update()
     {  
         base.Update();
         Debug.Log("Jugador Muerto");
-        currentHealth = maxHealth;
-        //transform.position = respawnPoint;
+        //currentHealth = maxHealth;
         stateMachine.currentState.Update();
         CheckForDashInput();
     }
