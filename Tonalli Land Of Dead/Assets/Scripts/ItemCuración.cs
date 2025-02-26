@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class ItemCuración : MonoBehaviour
 {
-    public int cantidadCuración = 20;
+    public int cantidadCuracion = 20; // Cantidad de vida que restaura
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if (collision.CompareTag("Player")) // Verifica si el jugador lo toca
         {
             CaballeroJaguar player = collision.GetComponent<CaballeroJaguar>();
-            if(player != null)
+            if (player != null)
             {
-                player.RecuperarSalud(cantidadCuración);
+                player.RecuperarSalud(cantidadCuracion); // Llama la función para curar
             }
-            Destroy(gameObject);
-        }
 
+            Destroy(gameObject); // Destruye el ítem de curación
+        }
     }
 }

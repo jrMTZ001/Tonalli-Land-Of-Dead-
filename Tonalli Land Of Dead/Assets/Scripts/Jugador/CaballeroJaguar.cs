@@ -26,6 +26,7 @@ public class CaballeroJaguar : Entity
     public int puntos = 0;
     public int vidaMaxima = 100;
     public int vidaActual;
+    public HealthBar healthBar;
     [SerializeField] private float knockbackDuration = 0.2f;
     [SerializeField] private float knockbackForceX = 5f;
     [SerializeField] private float knockbackForceY = 3f;
@@ -68,10 +69,12 @@ public class CaballeroJaguar : Entity
         base.Start();
         stateMachine.Initialize(idleState);
         currentHealth = maxHealth;
+        healthBar.UpdateHealthBar(currentHealth, maxHealth);
     }
     public void TakeDamage(int damage, Vector3 attackerPosition)
     {
         currentHealth -= damage;
+        healthBar.UpdateHealthBar(currentHealth, maxHealth);
         Debug.Log("Jugador recibió daño: " + damage);
 
         // **Aplica Knockback con menor fuerza**
@@ -93,7 +96,9 @@ public class CaballeroJaguar : Entity
 
     public void RecuperarSalud(int cantidad)
     {
-        vidaActual = Mathf.Min(vidaActual + cantidad, vidaMaxima);
+        currentHealth += cantidad;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        healthBar.UpdateHealthBar(currentHealth, maxHealth);
         Debug.Log("Vida: " + vidaActual);
     }
     private IEnumerator KnockbackRoutine(Vector2 knockbackDirection)

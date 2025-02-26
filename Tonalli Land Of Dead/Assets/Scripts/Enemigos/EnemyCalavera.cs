@@ -22,6 +22,9 @@ public class EnemyCalavera : MonoBehaviour
     private bool movingRight = true;
     private bool isAttacking = false;
 
+    public GameObject coinPrefab;
+    public GameObject healthItemPrefab;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -151,6 +154,7 @@ public class EnemyCalavera : MonoBehaviour
         */
         isDead = true;
         animator.SetBool("isDead", true);
+        DropLoot();
         rb.velocity = Vector2.zero; // Detener el movimiento
         rb.bodyType = RigidbodyType2D.Static; // Congelar al enemigo
         GetComponent<Collider2D>().enabled = false; // Desactivar colisión para evitar interferencias
@@ -229,5 +233,12 @@ public class EnemyCalavera : MonoBehaviour
 
         isAttacking = false; // Habilitar movimiento otra vez
         animator.SetBool("isMoving", true); // Reanudar animación de caminar
+    }
+
+    void DropLoot()
+    {
+        int randomDrop = Random.Range(0,2);
+        GameObject itemToDrop = (randomDrop == 0) ? coinPrefab : healthItemPrefab;
+        Instantiate(itemToDrop, transform.position, Quaternion.identity);
     }
 }
