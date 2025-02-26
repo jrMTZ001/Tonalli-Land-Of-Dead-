@@ -31,6 +31,7 @@ public class CaballeroJaguar : Entity
     [SerializeField] private float knockbackForceX = 5f;
     [SerializeField] private float knockbackForceY = 3f;
     private bool isBeingKnockedBack = false;
+    private Vector3 respawnPoint;
     public float dashDir { get; private set; }
    
 
@@ -63,6 +64,11 @@ public class CaballeroJaguar : Entity
         deathState = new PlayerDeathState(this, stateMachine, "Death");
         
     }
+    public void SetCheckpoint(Vector3 newCheckpoint)
+    {
+        respawnPoint = newCheckpoint;
+        Debug.Log("Checkpoint actualizado a: " + respawnPoint);
+    }
 
     protected override void Start()
     {
@@ -70,6 +76,7 @@ public class CaballeroJaguar : Entity
         stateMachine.Initialize(idleState);
         currentHealth = maxHealth;
         healthBar.UpdateHealthBar(currentHealth, maxHealth);
+        //respawnPoint = transform.position;
     }
     public void TakeDamage(int damage, Vector3 attackerPosition)
     {
@@ -140,6 +147,9 @@ public class CaballeroJaguar : Entity
     protected override void Update()
     {  
         base.Update();
+        Debug.Log("Jugador Muerto");
+        currentHealth = maxHealth;
+        //transform.position = respawnPoint;
         stateMachine.currentState.Update();
         CheckForDashInput();
     }
