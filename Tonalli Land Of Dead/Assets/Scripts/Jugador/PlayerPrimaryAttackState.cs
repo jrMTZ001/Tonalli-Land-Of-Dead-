@@ -77,11 +77,37 @@ public class PlayerPrimaryAttackState : PlayerState
     }
     private void Attack()
     {
+        /*
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(player.attackPoint.position, player.attackRange, player.enemyLayers);
 
         foreach (Collider2D enemy in hitEnemies)
         {
             enemy.GetComponent<EnemyCalavera>()?.TakeDamage(20); // Inflige daño
+        }
+        */
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(player.attackPoint.position, player.attackRange, player.enemyLayers);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            // Si el enemigo es una Calavera, le hace daño
+            EnemyCalavera calavera = enemy.GetComponent<EnemyCalavera>();
+            if (calavera != null)
+            {
+                calavera.TakeDamage(20);
+            }
+
+            // Si el enemigo es un Alma Errante, lo mata de un golpe
+            AlmaErrante almaErrante = enemy.GetComponent<AlmaErrante>();
+            if (almaErrante != null)
+            {
+                almaErrante.TakeDamage(1); // Muere de un golpe
+            }
+
+            MonsterEnemy monsterEnemy = enemy.GetComponent<MonsterEnemy>();
+            if(monsterEnemy != null)
+            {
+                monsterEnemy.TakeDamage(1);
+            }
         }
     }
 }
