@@ -42,6 +42,10 @@ public class GreatCamera : MonoBehaviour
                 transform.position.z);
 
         }
+        if(ParallaxBGYeah.instance != null)
+        {
+            ParallaxBGYeah.instance.MoveBackground();
+        }
     }
 
     private void OnDrawGizmos()
