@@ -22,40 +22,44 @@ public class Jugador : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, whatIsGround);
-        theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, theRB.velocity.y);
-        if(knockbackCounter <= 0)
+    {   
+        if(Time.timeScale > 0f)
         {
+            isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, whatIsGround);
             theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, theRB.velocity.y);
-
-            if (Input.GetButtonDown("Jump"))
+            if (knockbackCounter <= 0)
             {
-                if (isGrounded == true)
+                theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, theRB.velocity.y);
+
+                if (Input.GetButtonDown("Jump"))
                 {
-                    Jump();
+                    if (isGrounded == true)
+                    {
+                        Jump();
+                    }
+                }
+
+
+                if (theRB.velocity.x > 0)
+                {
+                    transform.localScale = Vector3.one;
+                }
+                if (theRB.velocity.x < 0)
+                {
+                    transform.localScale = new Vector3(-1f, 1f, 1f);
                 }
             }
-
-
-            if (theRB.velocity.x > 0)
+            else
             {
-                transform.localScale = Vector3.one;
+                knockbackCounter -= Time.deltaTime;
+                theRB.velocity = new Vector2(knockbackSpeed * -transform.localScale.x, theRB.velocity.y);
             }
-            if (theRB.velocity.x < 0)
-            {
-                transform.localScale = new Vector3(-1f, 1f, 1f);
-            }
+            //Animations
+            anim.SetFloat("Speed", Mathf.Abs(theRB.velocity.x));
+            anim.SetBool("isGrounded", isGrounded);
+            anim.SetFloat("ySpeed", theRB.velocity.y);
         }
-        else
-        {
-            knockbackCounter -= Time.deltaTime;
-            theRB.velocity = new Vector2(knockbackSpeed * -transform.localScale.x, theRB.velocity.y);
-        }
-        //Animations
-        anim.SetFloat("Speed",Mathf.Abs(theRB.velocity.x));
-        anim.SetBool("isGrounded", isGrounded);
-        anim.SetFloat("ySpeed", theRB.velocity.y);
+        
 
     }
 

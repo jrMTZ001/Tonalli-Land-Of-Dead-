@@ -2,12 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 public class UIController : MonoBehaviour
 {   
     public static UIController instance;
     public Image[] heartIcons;
     public Sprite heartFull, heartEmpty;
+    public GameObject gameOverScreen;
+    public TMP_Text livesText;
+    public GameObject pauseScreen;
+    public string mainMenuScene;
     private void Awake()
     {
         instance = this;
@@ -21,7 +27,10 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseOnPause();
+        }
     }
 
     public void UpdateHealthDisplay(int health, int maxHealth)
@@ -48,5 +57,44 @@ public class UIController : MonoBehaviour
                 }
             }
         }
+    }
+    public void UpdateLivesDisplay(int currentLives)
+    {
+        livesText.text = currentLives.ToString();
+    }
+    public void ShowGameOver()
+    {
+        gameOverScreen.SetActive(true);
+    }
+    public void Restart()
+    {
+        //Debug.Log("Restarting");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1f;
+    }
+
+    public void PauseOnPause()
+    {
+        if(pauseScreen.activeSelf == false)
+        {
+            pauseScreen.SetActive(true);
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            pauseScreen.SetActive(false);
+            Time.timeScale = 1f;
+        }
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(mainMenuScene);
+        Time.timeScale = 1f;
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
