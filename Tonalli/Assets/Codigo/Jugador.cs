@@ -14,6 +14,7 @@ public class Jugador : MonoBehaviour
     public Animator anim; 
     public float knockbackLenght, knockbackSpeed;
     private float knockbackCounter;
+    private bool canFlip;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,9 +39,10 @@ public class Jugador : MonoBehaviour
                         Jump();
                     }
                 }
+                //Mathf.Abs(theRB.velocity.x) >= 0.01f)
+                //Mathf.Abs(theRB.velocity.x)
 
-
-                if (theRB.velocity.x > 0)
+                if (theRB.velocity.x > 0 )
                 {
                     transform.localScale = Vector3.one;
                 }
@@ -63,6 +65,15 @@ public class Jugador : MonoBehaviour
 
     }
 
+    public void DisableFlip()
+    {
+        canFlip = false;
+    }
+
+    public void EnableFlip()
+    {
+        canFlip = true;
+    }
     void Jump()
     {
         theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
