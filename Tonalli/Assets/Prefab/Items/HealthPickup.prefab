@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8593295203970163598
+--- !u!1 &240543526880310576
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7645337771871969572}
-  - component: {fileID: 1970152715155741251}
-  - component: {fileID: 7173856901893517955}
-  - component: {fileID: 5923468740943124584}
-  - component: {fileID: 600477858261693453}
+  - component: {fileID: 8123923361019434385}
+  - component: {fileID: 1388931767324675256}
+  - component: {fileID: 9172713261189539705}
+  - component: {fileID: 540985319995243084}
+  - component: {fileID: 6694575380259475548}
   m_Layer: 0
   m_Name: HealthPickup
-  m_TagString: Untagged
+  m_TagString: Health
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7645337771871969572
+--- !u!4 &8123923361019434385
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8593295203970163598}
+  m_GameObject: {fileID: 240543526880310576}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.64, y: -3.71, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.207446, y: -3.47, z: 0.07644789}
   m_LocalScale: {x: 0.080084614, y: 0.0663936, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1970152715155741251
+--- !u!114 &1388931767324675256
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8593295203970163598}
+  m_GameObject: {fileID: 240543526880310576}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae7f2881f68e67141bd373883c106fc9, type: 3}
@@ -49,13 +49,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   addToHealth: 1
   pickupEffect: {fileID: 2410171059949526504, guid: 6b8b1708c2862b44e975e45e958b40b7, type: 3}
---- !u!212 &7173856901893517955
+--- !u!212 &9172713261189539705
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8593295203970163598}
+  m_GameObject: {fileID: 240543526880310576}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -101,13 +101,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &5923468740943124584
+--- !u!58 &540985319995243084
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8593295203970163598}
+  m_GameObject: {fileID: 240543526880310576}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -136,14 +136,14 @@ CircleCollider2D:
   m_Offset: {x: 0.11303985, y: 0}
   serializedVersion: 2
   m_Radius: 4.3138356
---- !u!95 &600477858261693453
+--- !u!95 &6694575380259475548
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8593295203970163598}
+  m_GameObject: {fileID: 240543526880310576}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: b272bd5a5d7800842809f2ca29cee11d, type: 2}

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    
     public int maxHealth = 3;
     private int currentHealth;
     private bool isDead = false;
