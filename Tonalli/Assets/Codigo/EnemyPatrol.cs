@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
 {
+    
     public float speed = 2f;
     public int health = 3;
 
@@ -78,5 +79,7 @@ public class EnemyPatrol : MonoBehaviour
         isFacingRight = !isFacingRight;
         transform.Rotate(0f, 180f, 0f);
     }
+    
+    
 }
 

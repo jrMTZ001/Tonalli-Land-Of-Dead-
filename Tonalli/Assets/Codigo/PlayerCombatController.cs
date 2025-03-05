@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class PlayerCombatController : MonoBehaviour
 {
+    
     [SerializeField]
     private bool combatEnabled;
     [SerializeField]
@@ -15,6 +17,7 @@ public class PlayerCombatController : MonoBehaviour
     private Animator anim;
     [SerializeField]
     private LayerMask whatIsDamageable;
+   
 
     private void Start()
     {
@@ -58,11 +61,24 @@ public class PlayerCombatController : MonoBehaviour
 
     private void CheckAttackHitbox()
     {
+        /*
         Collider2D[] detectedObjects = Physics2D.OverlapCircleAll(attack1HitBoxPos.position, attack1Radius, whatIsDamageable);
+        
 
-        foreach(Collider2D collider in detectedObjects)
+        foreach (Collider2D collider in detectedObjects)
         {
             collider.transform.parent.SendMessage("Damage", attack1Damage);
+        }
+      */
+        Collider2D[] detectedObjects = Physics2D.OverlapCircleAll(attack1HitBoxPos.position, attack1Radius, whatIsDamageable);
+
+        foreach (Collider2D collider in detectedObjects)
+        {
+            EnemyHealth enemy = collider.GetComponent<EnemyHealth>(); // Obtener el script de vida del enemigo
+            if (enemy != null)
+            {
+                enemy.TakeDamage(Mathf.RoundToInt(attack1Damage)); // Convertir float a int antes de aplicar daño
+            }
         }
     }
 
@@ -77,4 +93,6 @@ public class PlayerCombatController : MonoBehaviour
     {
         Gizmos.DrawWireSphere(attack1HitBoxPos.position, attack1Radius);
     }
+   
+    
 }

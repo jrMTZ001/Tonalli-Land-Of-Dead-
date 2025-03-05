@@ -14,6 +14,8 @@ public class UIController : MonoBehaviour
     public TMP_Text livesText;
     public GameObject pauseScreen;
     public string mainMenuScene;
+    public Text textoMonedas;  // Referencia al componente de texto en UI
+
     private void Awake()
     {
         instance = this;
@@ -27,10 +29,12 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseOnPause();
         }
+        textoMonedas.text = " " + MonedaManager.Instance.ObtenerMonedas();
+
     }
 
     public void UpdateHealthDisplay(int health, int maxHealth)
