@@ -79,6 +79,13 @@ public class PlayerCombatController : MonoBehaviour
             {
                 enemy.TakeDamage(Mathf.RoundToInt(attack1Damage)); // Convertir float a int antes de aplicar daño
             }
+
+            // Si el objeto golpeado es una pared rompible
+            BreakeableObject wall = collider.GetComponent<BreakeableObject>();
+            if (wall != null)
+            {
+                wall.TakeDamage(1); // Llama al método para destruir la pared
+            }
         }
     }
 
