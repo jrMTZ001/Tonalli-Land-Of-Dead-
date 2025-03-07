@@ -14,6 +14,7 @@ public class EnemyPatrol : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
 
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -71,9 +72,11 @@ public class EnemyPatrol : MonoBehaviour
         rb.velocity = Vector2.zero; // Detiene el movimiento
         rb.isKinematic = true; // Evita colisiones
         GetComponent<Collider2D>().enabled = false; // Desactiva el collider
-        Destroy(gameObject, 1f); // Se destruye después de 1 segundo
+        //Destroy(gameObject, 1f); // Se destruye después de 1 segundo
+        
+        Destroy(gameObject); // Destruye el enemigo
     }
-
+   
     void Flip()
     {
         isFacingRight = !isFacingRight;

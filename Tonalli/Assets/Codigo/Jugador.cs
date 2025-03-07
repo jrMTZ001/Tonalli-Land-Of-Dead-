@@ -6,6 +6,7 @@ public class Jugador : MonoBehaviour
 {
     public float moveSpeed;
     public Rigidbody2D theRB;
+    
     public float jumpForce;
     private bool isGrounded;
     public Transform groundCheckPoint;
@@ -15,6 +16,7 @@ public class Jugador : MonoBehaviour
     public float knockbackLenght, knockbackSpeed;
     private float knockbackCounter;
     private bool canFlip;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,7 @@ public class Jugador : MonoBehaviour
         {
             isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, whatIsGround);
             theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, theRB.velocity.y);
+            
             if (knockbackCounter <= 0)
             {
                 theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, theRB.velocity.y);
@@ -61,7 +64,7 @@ public class Jugador : MonoBehaviour
             anim.SetBool("isGrounded", isGrounded);
             anim.SetFloat("ySpeed", theRB.velocity.y);
         }
-        
+       
 
     }
 
@@ -79,6 +82,7 @@ public class Jugador : MonoBehaviour
         theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
     }
 
+   
     public void Knockback()
     {
         theRB.velocity = new Vector2(0f, jumpForce * .5f);

@@ -24,6 +24,14 @@ public class PlayerCombatController : MonoBehaviour
         anim = GetComponent<Animator>();
         anim.SetBool("canAttack", combatEnabled);
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("InteractableObject"))
+        {
+            // Llamamos al método OnHit para soltar el ítem
+            collision.gameObject.GetComponent<InteractableObject>().OnHit();
+        }
+    }
     private void Update()
     {
         CheckCombatInput();
@@ -85,6 +93,12 @@ public class PlayerCombatController : MonoBehaviour
             if (wall != null)
             {
                 wall.TakeDamage(1); // Llama al método para destruir la pared
+            }
+            // Llamar al método de OnHit del objeto interactuable
+            InteractableObject interactable = enemy.GetComponent<InteractableObject>();
+            if (interactable != null)
+            {
+                interactable.OnHit();  // El objeto recibirá el golpe
             }
         }
     }
