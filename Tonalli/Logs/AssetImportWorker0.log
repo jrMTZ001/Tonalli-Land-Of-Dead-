@@ -15,7 +15,7 @@ C:/Users/ppmar/OneDrive/Documentos/Tonalli-Land-Of-Dead-/Tonalli
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64206
+64228
 Successfully changed project path to: C:/Users/ppmar/OneDrive/Documentos/Tonalli-Land-Of-Dead-/Tonalli
 C:/Users/ppmar/OneDrive/Documentos/Tonalli-Land-Of-Dead-/Tonalli
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,14 +49,14 @@ C:/Users/ppmar/OneDrive/Documentos/Tonalli-Land-Of-Dead-/Tonalli
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [7888]  Target information:
+Player connection [17236]  Target information:
 
-Player connection [7888]  * "[IP] 192.168.50.245 [Port] 0 [Flags] 2 [Guid] 4290112090 [EditorId] 4290112090 [Version] 1048832 [Id] WindowsEditor(7,ricardo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [17236]  * "[IP] 192.168.50.245 [Port] 0 [Flags] 2 [Guid] 753147314 [EditorId] 753147314 [Version] 1048832 [Id] WindowsEditor(7,ricardo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [7888] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [7888] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [17236] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [17236] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-Refreshing native plugins compatible for Editor in 23.26 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 19.63 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.42f1 (2dcb6a0abc42)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.3.42f1/Editor/Data/Resources/UnitySubsystems
@@ -72,46 +72,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2022.3.42f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2022.3.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity 2022.3.42f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56020
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56768
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2022.3.42f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity 2022.3.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010199 seconds.
-- Loaded All Assemblies, in  0.410 seconds
+Registered in 0.019769 seconds.
+- Loaded All Assemblies, in  0.470 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.290 seconds
-Domain Reload Profiling: 695ms
-	BeginReloadAssembly (134ms)
+Domain Reload Profiling: 754ms
+	BeginReloadAssembly (137ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (69ms)
-	LoadAllAssembliesAndSetupDomain (156ms)
-		LoadAssemblies (129ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (105ms)
+	LoadAllAssembliesAndSetupDomain (166ms)
+		LoadAssemblies (130ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (153ms)
-			TypeCache.Refresh (151ms)
-				TypeCache.ScanAssembly (135ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
+		AnalyzeDomain (162ms)
+			TypeCache.Refresh (160ms)
+				TypeCache.ScanAssembly (139ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
 	FinalizeReload (290ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (239ms)
+		SetupLoadedEditorAssemblies (244ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
+			InitializePlatformSupportModulesInManaged (11ms)
 			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (163ms)
-			ProcessInitializeOnLoadMethodAttributes (56ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (162ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -120,51 +120,51 @@ Domain Reload Profiling: 695ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.081 seconds
+- Loaded All Assemblies, in  1.004 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.878 seconds
-Domain Reload Profiling: 1949ms
-	BeginReloadAssembly (194ms)
+- Finished resetting the current domain, in  0.814 seconds
+Domain Reload Profiling: 1805ms
+	BeginReloadAssembly (193ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (27ms)
 	RebuildCommonClasses (42ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (66ms)
-	LoadAllAssembliesAndSetupDomain (758ms)
-		LoadAssemblies (566ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (680ms)
+		LoadAssemblies (544ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (301ms)
-			TypeCache.Refresh (240ms)
-				TypeCache.ScanAssembly (213ms)
-			ScanForSourceGeneratedMonoScriptInfo (46ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (879ms)
+		AnalyzeDomain (250ms)
+			TypeCache.Refresh (198ms)
+				TypeCache.ScanAssembly (175ms)
+			ScanForSourceGeneratedMonoScriptInfo (34ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (815ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (664ms)
+		SetupLoadedEditorAssemblies (616ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (5ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (103ms)
-			ProcessInitializeOnLoadAttributes (404ms)
-			ProcessInitializeOnLoadMethodAttributes (128ms)
-			AfterProcessingInitializeOnLoad (15ms)
+			BeforeProcessingInitializeOnLoad (107ms)
+			ProcessInitializeOnLoadAttributes (375ms)
+			ProcessInitializeOnLoadMethodAttributes (104ms)
+			AfterProcessingInitializeOnLoad (18ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 7.50 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 18.54 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5782 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (346.6 KB). Loaded Objects now: 6251.
-Memory consumption went from 221.8 MB to 221.5 MB.
-Total: 10.087400 ms (FindLiveObjects: 0.456600 ms CreateObjectMapping: 0.217000 ms MarkObjects: 9.174100 ms  DeleteObjects: 0.238200 ms)
+Unloading 33 unused Assets / (347.3 KB). Loaded Objects now: 6251.
+Memory consumption went from 221.7 MB to 221.4 MB.
+Total: 9.575600 ms (FindLiveObjects: 2.688000 ms CreateObjectMapping: 0.343200 ms MarkObjects: 6.168300 ms  DeleteObjects: 0.374300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -181,11 +181,51 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 263167.836930 seconds.
-  path: Assets/Arte General/Coleccionable.png
-  artifactKey: Guid(81c24a1c23315f249b2c67bd4965de18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Arte General/Coleccionable.png using Guid(81c24a1c23315f249b2c67bd4965de18) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  Time since last request: 264449.459145 seconds.
+  path: Assets/Arte General/_Udemy Metroidvania Assets/Art/Ansimuz/Ghost/ghost-idle.png
+  artifactKey: Guid(9df4e92c959197f4b917e20604efc418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arte General/_Udemy Metroidvania Assets/Art/Ansimuz/Ghost/ghost-idle.png using Guid(9df4e92c959197f4b917e20604efc418) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '5df3290c1e4e1e4a31e282275ff8c4f6') in 0.121544 seconds
+ -> (artifact id: '416dbc7288b6ab17c62a3d09a420adf1') in 0.155337 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 103.619668 seconds.
+  path: Assets/Arte General/_Udemy Metroidvania Assets/Art/Ansimuz/Ghost/ghost-appears.png
+  artifactKey: Guid(b6182f8d4b1caf647978798079daedf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arte General/_Udemy Metroidvania Assets/Art/Ansimuz/Ghost/ghost-appears.png using Guid(b6182f8d4b1caf647978798079daedf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '1debfbdab8f737c43e0c2401390f9f45') in 0.051910 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 293.147267 seconds.
+  path: Assets/Arte General/_Udemy Metroidvania Assets/Art/Ansimuz/Ghost/fire-ball.png
+  artifactKey: Guid(d762e3f43ad23c546ae0c3f2d6a4444a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arte General/_Udemy Metroidvania Assets/Art/Ansimuz/Ghost/fire-ball.png using Guid(d762e3f43ad23c546ae0c3f2d6a4444a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '6d455e591aacf276adc0ad4090d2198e') in 0.041372 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 319.614315 seconds.
+  path: Assets/Arte General/_Udemy Metroidvania Assets/Art/Ansimuz/Ghost/ghost-vanish.png
+  artifactKey: Guid(088ef073608cd0b4f813e63957e4f58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arte General/_Udemy Metroidvania Assets/Art/Ansimuz/Ghost/ghost-vanish.png using Guid(088ef073608cd0b4f813e63957e4f58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '69f7fc623eaccde5e48fa634a53e2cba') in 0.051179 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 2599.115191 seconds.
+  path: Assets/Arte General/2D Platformer Assets/Graphics/Boss/Tank_Big_Boss.png
+  artifactKey: Guid(693315c69ea86c84382fcc341e6f4ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arte General/2D Platformer Assets/Graphics/Boss/Tank_Big_Boss.png using Guid(693315c69ea86c84382fcc341e6f4ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8602659d6725d2564bb73333b0dbdd04') in 0.158389 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19

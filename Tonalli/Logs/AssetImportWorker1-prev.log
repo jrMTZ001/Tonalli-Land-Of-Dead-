@@ -15,7 +15,7 @@ C:/Users/ppmar/OneDrive/Documentos/Tonalli-Land-Of-Dead-/Tonalli
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63889
+64206
 Successfully changed project path to: C:/Users/ppmar/OneDrive/Documentos/Tonalli-Land-Of-Dead-/Tonalli
 C:/Users/ppmar/OneDrive/Documentos/Tonalli-Land-Of-Dead-/Tonalli
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,14 +49,14 @@ C:/Users/ppmar/OneDrive/Documentos/Tonalli-Land-Of-Dead-/Tonalli
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [16480]  Target information:
+Player connection [1184]  Target information:
 
-Player connection [16480]  * "[IP] 192.168.50.245 [Port] 0 [Flags] 2 [Guid] 4049949071 [EditorId] 4049949071 [Version] 1048832 [Id] WindowsEditor(7,ricardo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [1184]  * "[IP] 192.168.50.245 [Port] 0 [Flags] 2 [Guid] 4024979203 [EditorId] 4024979203 [Version] 1048832 [Id] WindowsEditor(7,ricardo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [16480] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [16480] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [1184] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [1184] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-Refreshing native plugins compatible for Editor in 20.67 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 19.43 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.42f1 (2dcb6a0abc42)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.3.42f1/Editor/Data/Resources/UnitySubsystems
@@ -72,46 +72,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2022.3.42f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2022.3.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity 2022.3.42f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56024
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56824
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2022.3.42f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity 2022.3.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012964 seconds.
-- Loaded All Assemblies, in  0.566 seconds
+Registered in 0.010259 seconds.
+- Loaded All Assemblies, in  0.477 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.376 seconds
-Domain Reload Profiling: 937ms
-	BeginReloadAssembly (179ms)
+- Finished resetting the current domain, in  0.283 seconds
+Domain Reload Profiling: 755ms
+	BeginReloadAssembly (163ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (47ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (102ms)
-	LoadAllAssembliesAndSetupDomain (216ms)
-		LoadAssemblies (173ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (76ms)
+	LoadAllAssembliesAndSetupDomain (180ms)
+		LoadAssemblies (154ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (212ms)
-			TypeCache.Refresh (210ms)
-				TypeCache.ScanAssembly (188ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (376ms)
+		AnalyzeDomain (177ms)
+			TypeCache.Refresh (176ms)
+				TypeCache.ScanAssembly (156ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (283ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (308ms)
+		SetupLoadedEditorAssemblies (231ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (200ms)
-			ProcessInitializeOnLoadMethodAttributes (80ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (162ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -120,51 +120,51 @@ Domain Reload Profiling: 937ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.143 seconds
+- Loaded All Assemblies, in  1.029 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.793 seconds
-Domain Reload Profiling: 1915ms
-	BeginReloadAssembly (221ms)
+- Finished resetting the current domain, in  0.836 seconds
+Domain Reload Profiling: 1857ms
+	BeginReloadAssembly (184ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (41ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (67ms)
-	LoadAllAssembliesAndSetupDomain (782ms)
-		LoadAssemblies (669ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (725ms)
+		LoadAssemblies (459ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (244ms)
-			TypeCache.Refresh (199ms)
-				TypeCache.ScanAssembly (173ms)
-			ScanForSourceGeneratedMonoScriptInfo (29ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (793ms)
+		AnalyzeDomain (368ms)
+			TypeCache.Refresh (308ms)
+				TypeCache.ScanAssembly (275ms)
+			ScanForSourceGeneratedMonoScriptInfo (44ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (837ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (618ms)
+		SetupLoadedEditorAssemblies (650ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (115ms)
-			ProcessInitializeOnLoadAttributes (366ms)
-			ProcessInitializeOnLoadMethodAttributes (114ms)
-			AfterProcessingInitializeOnLoad (12ms)
+			BeforeProcessingInitializeOnLoad (108ms)
+			ProcessInitializeOnLoadAttributes (399ms)
+			ProcessInitializeOnLoadMethodAttributes (111ms)
+			AfterProcessingInitializeOnLoad (17ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 13.60 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 9.47 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5782 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (347.8 KB). Loaded Objects now: 6251.
-Memory consumption went from 221.7 MB to 221.4 MB.
-Total: 7.606600 ms (FindLiveObjects: 0.625400 ms CreateObjectMapping: 0.309800 ms MarkObjects: 6.021500 ms  DeleteObjects: 0.647700 ms)
+Unloading 33 unused Assets / (345.7 KB). Loaded Objects now: 6251.
+Memory consumption went from 222.0 MB to 221.6 MB.
+Total: 5.016900 ms (FindLiveObjects: 0.527400 ms CreateObjectMapping: 0.323300 ms MarkObjects: 3.879500 ms  DeleteObjects: 0.285800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -181,73 +181,11 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 262964.747917 seconds.
-  path: Assets/Arte General/_Udemy 2D Platformer Assets/Art
-  artifactKey: Guid(667f9435a65092b438eacb4450f94686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Arte General/_Udemy 2D Platformer Assets/Art using Guid(667f9435a65092b438eacb4450f94686) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'b5b774865f589210d240089f25e33eaa') in 0.003851 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Arte General/_Udemy 2D Platformer Assets
-  artifactKey: Guid(60eb46e39354c8f47b3c50c57729b4d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Arte General/_Udemy 2D Platformer Assets using Guid(60eb46e39354c8f47b3c50c57729b4d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '8e8ba3708d006d9f41cbab8d3f8d100e') in 0.000797 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Arte General/_Udemy 2D Platformer Assets/Art/Pixel Adventure - pixelfrog/Enemies
-  artifactKey: Guid(be9a141bd4947da4db21b27d6d9e8db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Arte General/_Udemy 2D Platformer Assets/Art/Pixel Adventure - pixelfrog/Enemies using Guid(be9a141bd4947da4db21b27d6d9e8db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'ed4fa3bcfcdddde490320bf664314237') in 0.001306 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Arte General/_Udemy 2D Platformer Assets/Art/Pixel Adventure - pixelfrog/Enemies/Skull/Orange Particle.png
-  artifactKey: Guid(e5e6b62555bd156478b6dce8f0d31849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Arte General/_Udemy 2D Platformer Assets/Art/Pixel Adventure - pixelfrog/Enemies/Skull/Orange Particle.png using Guid(e5e6b62555bd156478b6dce8f0d31849) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+  Time since last request: 263157.812159 seconds.
+  path: Assets/Arte General/Coleccionable.png
+  artifactKey: Guid(81c24a1c23315f249b2c67bd4965de18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arte General/Coleccionable.png using Guid(81c24a1c23315f249b2c67bd4965de18) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '283609c95dc9727bcaa28e5321156a84') in 0.099395 seconds
+ -> (artifact id: '1512424dee4ed37b9b83f5e03168b509') in 0.114992 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000071 seconds.
-  path: Assets/Arte General/_Udemy 2D Platformer Assets/Art/Pixel Adventure - pixelfrog/Enemies/Skull/Red Particle.png
-  artifactKey: Guid(ea88acd646bfd0c4c9a4249a1f5406bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Arte General/_Udemy 2D Platformer Assets/Art/Pixel Adventure - pixelfrog/Enemies/Skull/Red Particle.png using Guid(ea88acd646bfd0c4c9a4249a1f5406bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '86b92d5a1d0f9d38f26f0be5ed8e88eb') in 0.014824 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Arte General/_Udemy 2D Platformer Assets/Art/Pixel Adventure - pixelfrog/Enemies/Skull/Idle 1 (52x54).png
-  artifactKey: Guid(9d70be98c03c4d2478062cb9afa83cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Arte General/_Udemy 2D Platformer Assets/Art/Pixel Adventure - pixelfrog/Enemies/Skull/Idle 1 (52x54).png using Guid(9d70be98c03c4d2478062cb9afa83cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '07883baab7d423b77d5088c28c84846c') in 0.054482 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 36.860262 seconds.
-  path: Assets/Arte General/_Udemy Metroidvania Assets/Art/Ansimuz/Ghost/ghost-idle.png
-  artifactKey: Guid(9df4e92c959197f4b917e20604efc418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Arte General/_Udemy Metroidvania Assets/Art/Ansimuz/Ghost/ghost-idle.png using Guid(9df4e92c959197f4b917e20604efc418) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '061f6fd5f6ab91ce8c097d95d50e6731') in 0.092125 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
