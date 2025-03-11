@@ -16,7 +16,7 @@ public class Jugador : MonoBehaviour
     public float knockbackLenght, knockbackSpeed;
     private float knockbackCounter;
     private bool canFlip;
-   
+    public bool canMove;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,38 +27,39 @@ public class Jugador : MonoBehaviour
     void Update()
     {   
         if(Time.timeScale > 0f)
-        {
-            isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, whatIsGround);
-            theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, theRB.velocity.y);
-            
-            if (knockbackCounter <= 0)
-            {
+        {   
+                isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, whatIsGround);
                 theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, theRB.velocity.y);
 
-                if (Input.GetButtonDown("Jump"))
+                if (knockbackCounter <= 0)
                 {
-                    if (isGrounded == true)
+                    theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, theRB.velocity.y);
+
+                    if (Input.GetButtonDown("Jump"))
                     {
-                        Jump();
+                        if (isGrounded == true)
+                        {
+                            Jump();
+                        }
+                    }
+                    //Mathf.Abs(theRB.velocity.x) >= 0.01f)
+                    //Mathf.Abs(theRB.velocity.x)
+
+                    if (theRB.velocity.x > 0)
+                    {
+                        transform.localScale = Vector3.one;
+                    }
+                    if (theRB.velocity.x < 0)
+                    {
+                        transform.localScale = new Vector3(-1f, 1f, 1f);
                     }
                 }
-                //Mathf.Abs(theRB.velocity.x) >= 0.01f)
-                //Mathf.Abs(theRB.velocity.x)
-
-                if (theRB.velocity.x > 0 )
+                else
                 {
-                    transform.localScale = Vector3.one;
+                    knockbackCounter -= Time.deltaTime;
+                    theRB.velocity = new Vector2(knockbackSpeed * -transform.localScale.x, theRB.velocity.y);
                 }
-                if (theRB.velocity.x < 0)
-                {
-                    transform.localScale = new Vector3(-1f, 1f, 1f);
-                }
-            }
-            else
-            {
-                knockbackCounter -= Time.deltaTime;
-                theRB.velocity = new Vector2(knockbackSpeed * -transform.localScale.x, theRB.velocity.y);
-            }
+                        
             //Animations
             anim.SetFloat("Speed", Mathf.Abs(theRB.velocity.x));
             anim.SetBool("isGrounded", isGrounded);

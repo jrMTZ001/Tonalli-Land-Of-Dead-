@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Mictl\xE1n.unity"
     guid: 38e5fbedbc306f347b2d76d0a51a9ec8
+  - enabled: 1
+    path: Assets/Scenes/Piso 1.unity
+    guid: 63400c0d035302544b84e4bd0a39d0ba
   m_configObjects: {}
