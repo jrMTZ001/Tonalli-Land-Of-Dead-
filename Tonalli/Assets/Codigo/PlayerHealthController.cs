@@ -12,9 +12,12 @@ public class PlayerHealthController : MonoBehaviour
     public SpriteRenderer thSR;
     public Color normalColor, fadeColor;
     private Jugador thePlayer;
+    
+    
     private void Awake()
     {
         Instance = this;
+
     }
     // Start is called before the first frame update
     void Start()
@@ -22,6 +25,8 @@ public class PlayerHealthController : MonoBehaviour
         thePlayer = GetComponent<Jugador>();
         currentHealth = maxHealth;
         UIController.instance.UpdateHealthDisplay(currentHealth, maxHealth);
+        
+
     }
 
     // Update is called once per frame
@@ -49,6 +54,7 @@ public class PlayerHealthController : MonoBehaviour
         {
             //invencibilityCounter = invencibilityLenght;
             currentHealth--;
+           
 
             if (currentHealth <= 0)
             {

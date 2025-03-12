@@ -15,6 +15,8 @@ public class PlayerCombatController : MonoBehaviour
     private bool gotInput, isAttacking, isFirstAttack;
     private float lastInputTime = Mathf.NegativeInfinity;
     private Animator anim;
+    
+    
     [SerializeField]
     private LayerMask whatIsDamageable;
    
@@ -23,6 +25,8 @@ public class PlayerCombatController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         anim.SetBool("canAttack", combatEnabled);
+        
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -58,6 +62,7 @@ public class PlayerCombatController : MonoBehaviour
                 anim.SetBool("Attack1", true);
                 anim.SetBool("firstAttack", isFirstAttack);
                 anim.SetBool("isAttacking", isAttacking);
+                
 
             }
         }

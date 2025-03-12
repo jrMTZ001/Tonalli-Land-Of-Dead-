@@ -18,10 +18,7 @@ public class LifeController : MonoBehaviour
     void Start()
     {
         thePlayer = FindFirstObjectByType<Jugador>();
-        if (UIController.instance != null)
-        {
-            UIController.instance.UpdateLivesDisplay(currentLives);
-        }
+        UpdateDisplay();
     }
 
     // Update is called once per frame
@@ -45,10 +42,7 @@ public class LifeController : MonoBehaviour
             StartCoroutine(GameOverCo());
 
         }
-        if (UIController.instance != null)
-        {
-            UIController.instance.UpdateLivesDisplay(currentLives);
-        }
+        UpdateDisplay();
         Instantiate(deathEffect, thePlayer.transform.position, deathEffect.transform.rotation);
     }
     public IEnumerator RespawnCo()
@@ -65,6 +59,20 @@ public class LifeController : MonoBehaviour
         if(UIController.instance != null)
         {
             UIController.instance.ShowGameOver();
+        }
+    }
+
+    public void AddLife()
+    {
+        currentLives++;
+        UpdateDisplay();
+    }
+
+    public void UpdateDisplay()
+    {
+        if (UIController.instance != null)
+        {
+            UIController.instance.UpdateLivesDisplay(currentLives);
         }
     }
 }

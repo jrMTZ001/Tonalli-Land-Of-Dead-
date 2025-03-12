@@ -1,5 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public class Jugador : MonoBehaviour
@@ -7,7 +7,7 @@ public class Jugador : MonoBehaviour
     public float moveSpeed;
     public Rigidbody2D theRB;
     
-    public float jumpForce;
+    public float jumpForce = 10f;
     private bool isGrounded;
     public Transform groundCheckPoint;
     public float groundCheckRadius;
@@ -17,9 +17,12 @@ public class Jugador : MonoBehaviour
     private float knockbackCounter;
     private bool canFlip;
     public bool canMove;
+    
     // Start is called before the first frame update
     void Start()
     {
+        
+
         
     }
 
@@ -81,6 +84,7 @@ public class Jugador : MonoBehaviour
     void Jump()
     {
         theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+        
     }
 
    
@@ -90,4 +94,6 @@ public class Jugador : MonoBehaviour
         anim.SetTrigger("isKnockingback");
         knockbackCounter = knockbackLenght;
     }
+
+   
 }

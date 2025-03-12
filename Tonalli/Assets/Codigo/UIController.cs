@@ -11,7 +11,7 @@ public class UIController : MonoBehaviour
     public Image[] heartIcons;
     public Sprite heartFull, heartEmpty;
     public GameObject gameOverScreen;
-    public TMP_Text livesText;
+    public TMP_Text livesText, collectiblesText;
     public GameObject pauseScreen;
     public string mainMenuScene;
     public Text textoMonedas;  // Referencia al componente de texto en UI
@@ -75,6 +75,10 @@ public class UIController : MonoBehaviour
         //Debug.Log("Restarting");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1f;
+    }
+    public void UpdateCollectible(int amount)
+    {
+        collectiblesText.text = amount.ToString();
     }
 
     public void PauseOnPause()
