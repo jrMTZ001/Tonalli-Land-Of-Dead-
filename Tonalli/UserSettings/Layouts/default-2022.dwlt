@@ -254,7 +254,7 @@ MonoBehaviour:
   - {fileID: 17}
   - {fileID: 18}
   m_Selected: 0
-  m_LastSelected: 2
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -416,9 +416,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 1afbffff
+      m_SelectedIDs: f68d0000
+      m_LastClickedID: 36342
+      m_ExpandedIDs: 98dcffff30ddffffd0ddffff6adeffff02dfffff9adfffff3ae0ffff1afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -824,9 +824,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -11.872235, y: -11.369963, z: 0}
+    m_Target: {x: 976.69946, y: 546.21094, z: 4.675741}
     speed: 2
-    m_Value: {x: -11.872212, y: -11.369975, z: 0.000014239291}
+    m_Value: {x: 973.93494, y: 549.0355, z: 4.377055}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -876,9 +876,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2.1024168
+    m_Target: 633.8795
     speed: 2
-    m_Value: 2.1024647
+    m_Value: 663.74817
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1120,7 +1120,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Arte General/Bringer-Of-Death/SpriteSheet
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1128,16 +1128,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Arte General/Bringer-Of-Death/SpriteSheet
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\ppmar\OneDrive\Documentos\Tonalli-Land-Of-Dead-\Tonalli
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 6c780000
-    m_LastClickedID: 30828
-    m_ExpandedIDs: 000000004278000044780000467800004878000000ca9a3b
+    scrollPos: {x: 0, y: 451}
+    m_SelectedIDs: d0780000
+    m_LastClickedID: 30928
+    m_ExpandedIDs: 0000000042780000447800004678000048780000607800006278000064780000887c0000b67c0000ba7c0000be7c0000007d0000047d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1193,7 +1193,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000fe74000056710000e2e700002ae200009eed00006adc000092980000d8740000e6740000ea740000308e00005692000010ba0000368e0000428e000038920000087300000a7500003acf0000fc74000032a30000f0750000629d0000689d0000bc8a00000a7900009eb3000078830000847900005a790000ee7e00004adc01005c520200fe7f0000f67a0000647400008079000016730000b27b00009a780000187b0000ca7400008078000076780000d8780000
+    m_ExpandedInstanceIDs: c6230000fe74000056710000e2e700002ae200009eed00006adc000092980000d8740000e6740000ea740000308e00005692000010ba0000368e0000428e000038920000087300000a7500003acf0000fc74000032a30000f0750000629d0000689d0000bc8a00000a7900009eb3000078830000847900005a790000ee7e00004adc01005c520200fe7f0000f67a0000647400008079000016730000b27b00009a780000187b0000ca74000080780000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
