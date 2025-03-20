@@ -1,31 +1,37 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogSystem : MonoBehaviour
 {
-    public GameObject dialogueBox; // El panel donde se muestra el texto del diálogo
-    public Text dialogueText; // El texto que se mostrará
-    public Button nextButton; // El botón para avanzar en el diálogo
-    public string[] dialogueLines; // Las líneas del diálogo
+    public GameObject dialogueBox;
+    public Text dialogueText;
+    public Button nextButton;
+    public string[] dialogueLines;
 
-    private int currentLine = 0; // Línea actual del diálogo
-    private bool isPlayerInRange = false; // Controlar si el jugador está cerca del NPC
+    private int currentLine = 0;
+    private bool isPlayerInRange = false;
+
+    // ðŸ”¥ Referencia al movimiento del player
+    private Jugador playerMovement;
 
     void Start()
     {
-        // Al principio, la caja de diálogo está oculta
         dialogueBox.SetActive(false);
-
-        // Asociamos el evento del botón de avanzar
         nextButton.onClick.AddListener(ShowNextLine);
+
+        // ðŸ”¥ Buscar automÃ¡ticamente al Player y su script de movimiento
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            playerMovement = player.GetComponent<Jugador>();
+        }
     }
 
     void Update()
     {
-        // Detectar si el jugador está cerca del NPC para iniciar el diálogo (esto se puede hacer con un collider)
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.E)) // Usa la tecla E o la que prefieras
+        if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
             StartDialogue();
         }
@@ -33,14 +39,19 @@ public class DialogSystem : MonoBehaviour
 
     void StartDialogue()
     {
-        // Muestra la caja de diálogo al comenzar
         dialogueBox.SetActive(true);
-        ShowNextLine(); // Muestra la primera línea
+
+        // ðŸ”¥ Desactivar movimiento
+        if (playerMovement != null)
+        {
+            playerMovement.enabled = false;
+        }
+
+        ShowNextLine();
     }
 
     void ShowNextLine()
     {
-        // Si aún hay más líneas de diálogo, muestra la siguiente
         if (currentLine < dialogueLines.Length)
         {
             dialogueText.text = dialogueLines[currentLine];
@@ -48,27 +59,30 @@ public class DialogSystem : MonoBehaviour
         }
         else
         {
-            EndDialogue(); // Si ya no hay más líneas, termina el diálogo
+            EndDialogue();
         }
     }
 
     void EndDialogue()
     {
-        // Oculta la caja de diálogo al terminar
         dialogueBox.SetActive(false);
-        currentLine = 0; // Reinicia el índice de líneas para el siguiente diálogo
+        currentLine = 0;
+
+        // ðŸ”¥ Reactivar movimiento
+        if (playerMovement != null)
+        {
+            playerMovement.enabled = true;
+        }
     }
 
-    // Método para controlar cuando el jugador entra en el rango del NPC
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player")) // Asegúrate de que el jugador tenga el tag "Player"
+        if (collision.CompareTag("Player"))
         {
             isPlayerInRange = true;
         }
     }
 
-    // Método para controlar cuando el jugador sale del rango del NPC
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -76,5 +90,4 @@ public class DialogSystem : MonoBehaviour
             isPlayerInRange = false;
         }
     }
-
 }

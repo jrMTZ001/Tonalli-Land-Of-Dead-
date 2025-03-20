@@ -15,6 +15,7 @@ public class HealthPickup : MonoBehaviour
             {
                 PlayerHealthController.Instance.AddHealth(addToHealth);
                 Destroy(gameObject);
+                SFXManager.Instance.PlayItemPickup();
                 Instantiate(pickupEffect, transform.position, transform.rotation);
             }
         }

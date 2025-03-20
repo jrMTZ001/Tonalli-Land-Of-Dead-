@@ -62,7 +62,8 @@ public class PlayerCombatController : MonoBehaviour
                 anim.SetBool("Attack1", true);
                 anim.SetBool("firstAttack", isFirstAttack);
                 anim.SetBool("isAttacking", isAttacking);
-                
+                SFXManager.Instance.PlayAttack();
+
 
             }
         }
@@ -105,6 +106,7 @@ public class PlayerCombatController : MonoBehaviour
             {
                 interactable.OnHit();  // El objeto recibirá el golpe
             }
+
         }
     }
 

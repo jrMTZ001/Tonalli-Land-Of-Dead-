@@ -6,8 +6,17 @@ public class AudioManager : MonoBehaviour
 {   
     public static AudioManager instance;
     private void Awake()
-    {
-        instance = this;
+    {   
+        if(instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
     }
     public AudioSource menuMusic, bossMusic;
     public AudioSource[] levelTracks;
@@ -26,5 +35,16 @@ public class AudioManager : MonoBehaviour
     {   
         StopMusic();
         menuMusic.Play();
+    }
+
+    public void PlayBossMusic()
+    {
+        StopMusic();
+        bossMusic.Play();
+    }
+    public void PlayLevelMusic(int trackToPlay)
+    {
+        StopMusic();
+        levelTracks[trackToPlay].Play();
     }
 }

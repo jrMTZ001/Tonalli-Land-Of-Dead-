@@ -13,6 +13,7 @@ public class CollectiblePickup : MonoBehaviour
             if(CollectiblesManager.instance != null)
             {
                 CollectiblesManager.instance.GetCollectible(amount);
+                BlackHeartManager.Instance.CollectHeart();
                 Destroy(gameObject);
                 Instantiate(pickupEffect, transform.position, Quaternion.identity);
             }

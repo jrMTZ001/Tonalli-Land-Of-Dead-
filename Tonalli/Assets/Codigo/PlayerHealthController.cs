@@ -54,13 +54,16 @@ public class PlayerHealthController : MonoBehaviour
         {
             //invencibilityCounter = invencibilityLenght;
             currentHealth--;
-           
+            SFXManager.Instance.PlayDamage();
+
 
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
                 //gameObject.SetActive(false);
                 LifeController.instance.Respawn();
+                SFXManager.Instance.PlayDeath();
+
             }
             else
             {

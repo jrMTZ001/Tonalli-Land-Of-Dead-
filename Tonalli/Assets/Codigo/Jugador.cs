@@ -84,10 +84,11 @@ public class Jugador : MonoBehaviour
     void Jump()
     {
         theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
-        
+        SFXManager.Instance.PlayJump();
+
     }
 
-   
+
     public void Knockback()
     {
         theRB.velocity = new Vector2(0f, jumpForce * .5f);

@@ -16,6 +16,7 @@ public class Tonalli : MonoBehaviour
 
             // Destruir la moneda al recogerla
             Destroy(gameObject);
+            SFXManager.Instance.PlayItemPickup();
         }
     }
 }
