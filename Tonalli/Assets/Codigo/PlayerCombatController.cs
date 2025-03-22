@@ -15,8 +15,6 @@ public class PlayerCombatController : MonoBehaviour
     private bool gotInput, isAttacking, isFirstAttack;
     private float lastInputTime = Mathf.NegativeInfinity;
     private Animator anim;
-    
-    
     [SerializeField]
     private LayerMask whatIsDamageable;
    
@@ -85,6 +83,7 @@ public class PlayerCombatController : MonoBehaviour
         }
       */
         Collider2D[] detectedObjects = Physics2D.OverlapCircleAll(attack1HitBoxPos.position, attack1Radius, whatIsDamageable);
+        
 
         foreach (Collider2D collider in detectedObjects)
         {
@@ -92,6 +91,7 @@ public class PlayerCombatController : MonoBehaviour
             if (enemy != null)
             {
                 enemy.TakeDamage(Mathf.RoundToInt(attack1Damage)); // Convertir float a int antes de aplicar daño
+                
             }
 
             // Si el objeto golpeado es una pared rompible
@@ -99,15 +99,27 @@ public class PlayerCombatController : MonoBehaviour
             if (wall != null)
             {
                 wall.TakeDamage(1); // Llama al método para destruir la pared
+                
+
             }
+            
             // Llamar al método de OnHit del objeto interactuable
             InteractableObject interactable = enemy.GetComponent<InteractableObject>();
             if (interactable != null)
             {
                 interactable.OnHit();  // El objeto recibirá el golpe
             }
-
+            
+            /*
+            InteractableObject interactable = collider.GetComponent<InteractableObject>();
+            if (interactable != null)
+            {
+                interactable.OnHit();
+                hitSomething = true;
+            }
+            */
         }
+       
     }
 
     private void FinishAttack1()

@@ -8,6 +8,7 @@ public class Jugador : MonoBehaviour
     public Rigidbody2D theRB;
     
     public float jumpForce = 10f;
+    public bool canAirJump = false;
     private bool isGrounded;
     public Transform groundCheckPoint;
     public float groundCheckRadius;
@@ -17,7 +18,15 @@ public class Jugador : MonoBehaviour
     private float knockbackCounter;
     private bool canFlip;
     public bool canMove;
-    
+    public GameObject projectilePrefab;
+    public Transform firePoint;
+    public float projectileSpeed = 10f;
+    public float wallSlideSpeed = 2f;
+    public LayerMask wallLayer;
+    private bool isTouchingWall;
+    public Transform wallCheck;
+    public float wallCheckDistance = 0.5f;
+    public int playerCoins = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,8 +34,6 @@ public class Jugador : MonoBehaviour
 
         
     }
-
-    // Update is called once per frame
     void Update()
     {   
         if(Time.timeScale > 0f)
@@ -68,10 +75,45 @@ public class Jugador : MonoBehaviour
             anim.SetBool("isGrounded", isGrounded);
             anim.SetFloat("ySpeed", theRB.velocity.y);
         }
-       
+        
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            ShootProjectile();
+        }
+        // Detección de pared
+        Vector2 direction = transform.localScale.x > 0 ? Vector2.right : Vector2.left;
+        isTouchingWall = Physics2D.Raycast(wallCheck.position, direction, wallCheckDistance, wallLayer);
+
+        // Debug visual del Raycast
+        Debug.DrawRay(wallCheck.position, direction * wallCheckDistance, Color.red);
+
+        // Si está tocando la pared, no está en el suelo, y está cayendo
+        if (isTouchingWall && !IsGrounded() && theRB.velocity.y < 0)
+        {
+            theRB.velocity = new Vector2(theRB.velocity.x, -wallSlideSpeed);
+        }
+
+        // Salto desde la pared
+        if (Input.GetKeyDown(KeyCode.Space) && isTouchingWall)
+        {
+            float horizontalForce = -transform.localScale.x * jumpForce;
+            theRB.velocity = new Vector2(horizontalForce, jumpForce);
+        }
 
     }
-
+    
+    void ShootProjectile()
+    {
+        GameObject proj = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
+        Rigidbody2D rbProj = proj.GetComponent<Rigidbody2D>();
+        rbProj.velocity = transform.localScale.x * Vector2.right * projectileSpeed;
+    }
+   
+    bool IsGrounded()
+    {
+        // Tu lógica de detección del suelo
+        return Physics2D.Raycast(transform.position, Vector2.down, 1f, LayerMask.GetMask("Ground"));
+    }
     public void DisableFlip()
     {
         canFlip = false;
@@ -88,6 +130,7 @@ public class Jugador : MonoBehaviour
 
     }
 
+    
 
     public void Knockback()
     {
