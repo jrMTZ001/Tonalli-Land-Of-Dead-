@@ -22,6 +22,17 @@ public class ParallaxBGYeah : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {   
+        
+        sky.position = new Vector3(theCam.position.x, theCam.position.y, sky.position.z);
+        treeline.position = new Vector3(
+            theCam.position.x * parallaxSpeed,
+            theCam.position.y * parallaxSpeed,
+            treeline.position.z);
+        
+    }
+
+    public void MoveBackground()
+    {   
         /*
         sky.position = new Vector3(theCam.position.x, theCam.position.y, sky.position.z);
         treeline.position = new Vector3(
@@ -29,14 +40,5 @@ public class ParallaxBGYeah : MonoBehaviour
             theCam.position.y * parallaxSpeed,
             treeline.position.z);
         */
-    }
-
-    public void MoveBackground()
-    {
-        sky.position = new Vector3(theCam.position.x, theCam.position.y, sky.position.z);
-        treeline.position = new Vector3(
-            theCam.position.x * parallaxSpeed,
-            theCam.position.y * parallaxSpeed,
-            treeline.position.z);
     }
 }

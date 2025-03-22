@@ -105,4 +105,10 @@ public class UIController : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void ShowCollectibleData()
+    { 
+    
+    }
+
 }
